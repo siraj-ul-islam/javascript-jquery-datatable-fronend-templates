@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    background: darkslateblue;
+}
+
+/* .img{
+    background-color: blue;
+    position: relative;
+    top: 7px;
+    left: 5px;
+    height: 300px;
+}
+.search{
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    max-width: auto;
+    margin-top: 150px;
+    margin-left: 50%;
+    border: 3px solid #0f0f0e;
+    padding: 4px;
+    
+} */
+
+.imgBox{
+    background-image: url('image.png');
+    position: relative;
+    top: 7px;
+    left: 5px;
+    height: 145px;
+    width: 145px;
+    cursor: pointer;
+}
+
+.whiteBox{
+    display: inline-block;
+    height: 155px;
+    width: 155px;
+    margin: 10px;
+    background-color: white;
+    border: 3px black solid;
+}
+
+.hold{
+    border: solid red 4px;
+}
+
+.dashed{
+    background: rgb(214, 206, 206);
+    border-style: dashed;
+}
+
+.hide{
+    display: none;
+}
+
+    </style>
+</head>
+<body>
+
+
+    <div class="whiteBox">
+        <div class="imgBox" draggable="true"></div>
+    </div>
+    <div class="whiteBox"></div>
+    <div class="whiteBox"></div>
+    <div class="whiteBox"></div>
+
+    <!-- <div class="img">
+        <div class="search">
+            You search here
+        </div>
+    </div> -->
+
+    <script>
+        const imgBox = document.querySelector('.imgBox');
+const whiteBoxes = document.getElementsByClassName('whiteBox');
+
+// Event listeners for draggable element imgBox
+imgBox.addEventListener('dragstart', (e) => {
+    console.log('DragStart has been triggered');
+    e.target.className += ' hold';
+    setTimeout(() => {
+        e.target.className = 'hide';
+    }, 0);
+
+});
+
+imgBox.addEventListener('dragend', (e) => {
+    console.log('DragEnd has been triggered');
+    e.target.className = 'imgBox';
+});
+
+for (whiteBox of whiteBoxes) {
+    whiteBox.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        console.log('DragOver has been triggered');
+    });
+
+    whiteBox.addEventListener('dragenter', (e) => {
+        console.log('DragEnter has been triggered');
+        e.target.className += ' dashed'; 
+    })
+
+    whiteBox.addEventListener('dragleave', (e) => {
+        console.log('DragLeave has been triggered');
+        e.target.className = 'whiteBox'
+    })
+
+    whiteBox.addEventListener('drop', (e) => {
+        console.log('Drop has been triggered');
+        e.target.append(imgBox);
+    })
+}
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+<!-- drag :It is fired when a dragged item is dragged.
+
+dragend :It is fired when a drag operation ends, such as releasing a mouse button or hitting the Esc key.
+
+dragenter :It is fired when a dragged item enters a valid drop target.
+
+dragexit :It is fired when an element is no longer the drag operation's immediate selection target.
+
+dragleave :It is fired when a dragged item leaves a valid drop target.
+
+dragover :It is fired when a dragged item is being dragged over a valid drop target, every few hundred milliseconds.
+
+dragstart :It is fired when the user starts dragging an item.
+
+drop :It is fired when an item is dropped on a valid drop target. -->

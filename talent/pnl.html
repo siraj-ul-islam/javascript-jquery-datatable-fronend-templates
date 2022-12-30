@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--favicon-->
+	<link rel="icon" href="assets/images/favicon-32x32.png" type="image/png" />
+	<!--plugins-->
+	<link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+	<link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+	<link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+	<link href="assets/plugins/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
+	<link href="assets/plugins/highcharts/css/highcharts-white.css" rel="stylesheet" />
+	<!-- loader-->
+	<link href="assets/css/pace.min.css" rel="stylesheet" />
+	<script src="assets/js/pace.min.js"></script>
+	<!-- Bootstrap CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/bootstrap-extended.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet">
+	<link href="assets/css/app.css" rel="stylesheet">
+	<link href="assets/css/icons.css" rel="stylesheet">
+	
+	 <title>Talen</title>
+</head>
+
+<body class="bg-theme bg-theme9">
+	<!--wrapper-->
+	<div class="wrapper">
+		<!--sidebar wrapper -->
+		 <div class="sidebar-wrapper" data-simplebar="true">
+                <div class="sidebar-header">
+                    <div>
+                        <img src="assets/images/logo.png" class="logo-icon" alt="logo" />
+                    </div>
+                </div>
+                <!--navigation-->
+                <ul class="metismenu" id="menu">
+                    <li>
+                        <a href="index.html" class="">
+                            <div class="parent-icon"><i class="bx bx-category"></i></div>
+                            <div class="menu-title">Model</div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="pnl.html" class=" active">
+                            <div class="parent-icon"><i class="bx bx-category"></i></div>
+                            <div class="menu-title">Pnl Summary Charts</div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="direction.html" class="">
+                            <div class="parent-icon"><i class="bx bx-category"></i></div>
+                            <div class="menu-title">Direction Accuary</div>
+                        </a>
+                    </li>
+
+                     <li>
+                         <a href="forecas.html" class="">
+                            <div class="parent-icon"><i class="bx bx-category"></i></div>
+                            <div class="menu-title">Forecast Comparison</div>
+                        </a>
+                    </li>
+
+                </ul>
+                <!--end navigation-->
+            </div>
+
+		<!--start page wrapper -->
+		<div class="page-wrapper">
+			<div class="page-content">
+				<div class="card shadow-none bg-transparent border-bottom border-2">
+					<div class="card-body">
+						<div class="row align-items-center">
+							<div class="col-md-2">
+								<h4 class="mb-12 mb-md-0">Audience Overview</h4>
+							</div>
+							<div class="col-md-6">
+								<div class="row row-cols-auto">
+                                        <div class="col">
+                                            <button type="button" class="btn btn-light px-5">Comparison</button>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-light px-5">Week</button>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-light px-5">3 Month</button>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-light px-5">6 Month</button>
+                                        </div>
+                                         <div class="col">
+                                            <button type="button" class="btn btn-light px-5">Year</button>
+                                        </div>
+
+                                       
+                                    </div>
+
+							</div>
+							<div class="col-md-4">
+								<form class="float-md-end">
+									<div class="row row-cols-md-auto g-lg-3">
+										<label for="inputFromDate" class="col-md-2 col-form-label text-md-end">Start Date</label>
+										<div class="col-md-4">
+											<input type="date" class="form-control" id="inputFromDate">
+										</div>
+										<label for="inputToDate" class="col-md-2 col-form-label text-md-end">End Date</label>
+										<div class="col-md-4">
+											<input type="date" class="form-control" id="inputToDate">
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+                    <div class="col-md-3 heading">
+                        <h4 class="mb-3 mb-md-0">PNL Summary Chart</h4>
+                    </div>
+
+                    <style type="text/css">
+                        /* Style tab links */
+
+                    </style>
+
+                    
+
+
+<div class="row">
+    <div class="col-md-12">
+<button class="tablink " onclick="openPage('News' )" id="defaultOpen">Absolute</button>
+<button class="tablink" onclick="openPage('Home')">Relative</button>
+
+
+<div id="News" class="tabcontent">
+
+  <!-- tab 1 -->
+<div class="row tab-bg">
+    <div class="col-md-6">
+        <small  class="text-center">P/L BTC Actual-> NeuralProphet Fsct (Absolute)1</small>
+       <div id="chart1"></div>   
+    </div>
+
+    <div class="col-md-6">
+          <small  class="text-center">P/L BTC Actual-> NeuralProphet Fsct (Absolute)2
+</small>
+        <div id="chart6"></div>   
+    </div>
+</div>
+<!-- tab 2 -->
+<br>
+<div class="row tab-bg">
+    <div class="col-md-6">
+        <small  class="text-center">P/L BTC Actual-> NeuralProphet Fsct (Absolute)4</small>
+     <img src="assets/images/tab-1.png">
+       
+    </div>
+
+    <div class="col-md-6">
+          <small  class="text-center">P/L BTC Actual-> NeuralProphet Fsct (Absolute)5
+</small>
+ <img src="assets/images/tab-2.png">
+                              
+        
+    </div>
+</div>
+
+<!-- tab 3 -->
+<br>
+<div class="row tab-bg">
+    <div class="col-md-6">
+        <small  class="text-center">P/L BTC Actual-> NeuralProphet Fsct (Absolute)4</small>
+     <img src="assets/images/tab-1.png">
+       
+    </div>
+
+    <div class="col-md-6">
+          <small  class="text-center">P/L BTC Actual-> NeuralProphet Fsct (Absolute)5
+</small>
+ <img src="assets/images/tab-2.png">
+                              
+        
+    </div>
+</div>
+
+
+</div>
+
+    <!--  -->
+<div id="Home" class="tabcontent">
+ 
+
+<div class="row tab-bg">
+    <div class="col-md-6">
+        <small  class="text-center">P/L NeuralProphet Base Point -> NeuralProphet Fsct (Relative)</small>
+     <img src="assets/images/tab-1.png">
+       
+    </div>
+
+    <div class="col-md-6">
+            <small  class="text-center">P/L NeuralProphet Base Point -> NeuralProphet Fsct (Relative)</small>
+ <img src="assets/images/tab-2.png">
+                              
+        
+    </div>
+</div>
+
+
+
+<!-- tab 3 -->
+<br>
+<div class="row tab-bg">
+    <div class="col-md-6">
+        <small  class="text-center">P/L LSTM Base Point -> LSTM Fsct (Relative)</small>
+     <img src="assets/images/tab-1.png">
+       
+    </div>
+
+    <div class="col-md-6">
+            <small  class="text-center">P/L LSTM Base Point -> LSTM Fsct (Relative)</small>
+ <img src="assets/images/tab-2.png">
+                              
+        
+    </div>
+</div>
+
+<!-- tab 3 -->
+<br>
+<div class="row tab-bg">
+    <div class="col-md-6">
+        <small  class="text-center">P/L LSTM Base Point -> LSTM Fsct (Relative)</small>
+     <img src="assets/images/tab-1.png">
+       
+    </div>
+
+    <div class="col-md-6">
+          <small  class="text-center">P/L LSTM Base Point -> LSTM Fsct (Relative)</small>
+ <img src="assets/images/tab-2.png">
+                              
+        
+    </div>
+</div>
+</div>
+<!--  -->
+
+</div>
+
+
+
+                
+
+
+
+                    <!--end row-->
+
+                </div>
+            </div>
+
+            <!--end page wrapper -->
+            <!--start overlay-->
+            <div class="overlay toggle-icon"></div>
+            <!--end overlay-->
+            <!--Start Back To Top Button-->
+            <a href="javaScript:;" class="back-to-top"><i class="bx bxs-up-arrow-alt"></i></a>
+            <!--End Back To Top Button-->
+            <footer class="page-footer">
+                <p class="mb-0">Copyright © 2022. All right reserved.</p>
+            </footer>
+        </div>
+        <!--end wrapper-->
+
+
+
+        <script type="text/javascript">
+                        function openPage(pageName, elmnt, color) {
+  // Hide all elements with class="tabcontent" by default */
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Remove the background color of all tablinks/buttons
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  // Show the specific tab content
+  document.getElementById(pageName).style.display = "block";
+
+  // Add the specific color to the button used to open the tab content
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+                    </script>
+
+        <!-- Bootstrap JS -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!--plugins-->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+        <script src="assets/plugins/metismenu/js/metisMenu.min.js"></script>
+        <script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+        <!-- Vector map JavaScript -->
+        <script src="assets/plugins/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
+        <script src="assets/plugins/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+        <!-- highcharts js -->
+        <script src="assets/plugins/highcharts/js/highcharts.js"></script>
+        <script src="assets/plugins/apexcharts-bundle/js/apexcharts.min.js"></script>
+        <script src="assets/js/index2.js"></script>
+        <!--app JS-->
+        <script src="assets/js/app.js"></script>
+      
+
+
+
+
+ 
+    <script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+    <script src="assets/plugins/chartjs/js/Chart.min.js"></script>
+    <script src="assets/plugins/chartjs/js/chartjs-custom.js"></script>
+
+
+
+    </body>
+</html>

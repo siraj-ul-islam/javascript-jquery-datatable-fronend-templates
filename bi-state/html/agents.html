@@ -1,0 +1,965 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <!--Title-->
+    <title>Bi-State, Pest Control, Limited Company</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--description-->
+    <meta name="description" content="">
+    <!--Key Words-->
+    <meta name="keywords" content="">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--style-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+</head>
+
+<body class="bg-fafbff">
+    <header>
+        <nav class="navbar navbar-expand-lg admin-navigation">
+            <div class="container-fluid align_right">
+                <a class="navbar-brand admin-logo" href="index.html"><img src="assets/images/admin-icon.png" alt=""></a>
+                <button class="navbar-toggler hamburger-icon-box mobile-toggle-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon hamburger-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse admin-navigation-inner" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto admin-navigation-list">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="edit-campaign.html">Campaigns</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="client.html">Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="agents.html">Agents</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="admin-panel-list">
+                    <li>
+                        <a href="#"><img src="assets/images/bell-icon.svg" alt=""></a>
+                        <div class="notification-dd">
+                            <ul class="notification-dd-list">
+                                <li class="active">
+                                    <a href="#">
+                                        <div class="icon-holder"><img src="assets/images/yellow-play-icon.svg" alt=""></div>
+                                        <div class="notification-text">12 new campaigns waiting for approval</div>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">
+                                        <div class="icon-holder"><img src="assets/images/yellow-edit-icon.svg" alt=""></div>
+                                        <div class="notification-text">3 new campaign edits pending approval</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon-holder"><img src="assets/images/green-circle-check-mark.svg" alt=""></div>
+                                        <div class="notification-text">6 campaigns approved by <span>Morning Star</span></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/images/admin-img.png" alt=""></a>
+                    </li>
+                </ul>
+                <div class="mobile-side-bar">
+                    <div class="close-cross">
+                        <a href="#" class="close-cross-btn"><img src="assets/images/sidebar-cross-icon.svg" alt=""></a>
+                    </div>
+                    <div class="side-bar-logo-box">
+                        <a href="index.html">
+                            <span><img src="assets/images/admin-icon.png" alt=""></span> SEO Tool
+                        </a>
+                    </div>
+                    <ul class="mobile-side-nav">
+                        <li class="active">
+                            <a href="edit-campaign.html">Campaigns</a>
+                        </li>
+                        <li>
+                            <a href="client.html">Clients</a>
+                        </li>
+                        <li>
+                            <a href="#">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="campaign-listing-wrapper">
+        <div class="container">
+            <div class="mobile-title">Camapigns</div>
+            <div class="campaign-listing-inner">
+                <h2>Clients</h2>
+                <ul class="nav nav-tabs campaign-listing-tab" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="campaign-tab01" data-bs-toggle="tab" data-bs-target="#campaign-tab-content01" type="button" role="tab" aria-controls="home" aria-selected="true">Active (1214)</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="campaign-tab02" data-bs-toggle="tab" data-bs-target="#campaign-tab-content02" type="button" role="tab" aria-controls="profile" aria-selected="false">Archived(2)</button>
+                    </li>
+                </ul>
+                <div class="tab-content campaign-listing-content" id="myTabContent">
+                    <div class="tab-pane campaign-listing-content-tab fade show active" id="campaign-tab-content01" role="tabpanel" aria-labelledby="campaign-tab01">
+                        <div class="create-new-campaign-btn mobile-hide">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#AddAgent"><span><img src="assets/images/add-icon.svg" alt=""></span> New Agent</a>
+                        </div>
+                        <div class="search-or-sort-box">
+                            <div class="sort-box">
+                                <select name="sort-filed" class="sort-filed">
+                                    <option value="">Sort By</option>
+                                    <option value="">Option 01</option>
+                                    <option value="">Option 02</option>
+                                    <option value="">Option 03</option>
+                                  </select>
+                            </div>
+                            <div class="create-new-campaign-btn mobile-show">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#AddAgent"><span><img src="assets/images/add-icon.svg" alt=""></span> New Agent</a>
+                            </div>
+                            <div class="search-field-outer">
+                                <input type="text" name="text" class="search-field">
+                            </div>
+                        </div>
+                        <div class="agent-table-wrapper table_responsive mobile-hide">
+                            <table class="client-table agent-table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <div class="check-box-container agent-check-box">
+                                                <input type="checkbox" id="select-all" name="">
+                                                <label for="checkbox" class="agent-check-box-label">Select all</label>
+                                            </div>
+                                        </th>
+                                        <th>Agent Name</th>
+                                        <th>Campaigns</th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="check-box-container">
+                                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="compaign-holder-img">RN</div>
+                                                    <div class="compaign-holder-name">Rafay Nadeem</div>
+                                                </div>
+                                            </td>
+                                            <td>120</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <div class="dd-select-field-outer agent-dd-field">
+                                                    <select name="location" class="dd-select-field">
+                                                        <option value="">Agent</option>
+                                                        <option value="">Option 01</option>
+                                                        <option value="">Option 02</option>
+                                                        <option value="">Option 03</option>
+                                                      </select>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="info-sign-box">
+                                                    <a href="#">
+                                                        <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                    </a>
+                                                    <div class="campaign-detail-box">
+                                                        <ul class="campaign-detail-list">
+                                                            <li>
+                                                                <div class="campaign-info-list">Created</div>
+                                                                <div class="campaign-related-list">11 May 2020</div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="campaign-info-list">Modified</div>
+                                                                <div class="campaign-related-list">12 August 2021</div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="campaign-info-list">Address</div>
+                                                                <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="assign-campaign-box">
+                                                    <div class="assign-compaign-btn">...</div>
+                                                    <div class="assign-compaign-dd">
+                                                        <ul class="assign-compaign-dd-list">
+                                                            <li>Actions</li>
+                                                            <li class="active">
+                                                                <a href="#">
+                                                                    <div class="icon-box02"></div> Edit</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <div class="icon-box06"></div> Archive</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <div class="icon-box08"></div> Show Details</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <div class="icon-box04"></div> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="check-box-container">
+                                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="bg-74DDE5 compaign-holder-img">RN</div>
+                                                    <div class="compaign-holder-name">Rafay Nadeem</div>
+                                                </div>
+                                            </td>
+                                            <td>120</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <div class="dd-select-field-outer agent-dd-field">
+                                                    <select name="location" class="dd-select-field">
+                                                        <option value="">Agent</option>
+                                                        <option value="">Option 01</option>
+                                                        <option value="">Option 02</option>
+                                                        <option value="">Option 03</option>
+                                                      </select>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="info-sign-box">
+                                                    <a href="#">
+                                                        <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                    </a>
+                                                    <div class="campaign-detail-box">
+                                                        <ul class="campaign-detail-list">
+                                                            <li>
+                                                                <div class="campaign-info-list">Created</div>
+                                                                <div class="campaign-related-list">11 May 2020</div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="campaign-info-list">Modified</div>
+                                                                <div class="campaign-related-list">12 August 2021</div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="campaign-info-list">Address</div>
+                                                                <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="assign-campaign-box">
+                                                    <div class="assign-compaign-btn">...</div>
+                                                    <div class="assign-compaign-dd">
+                                                        <ul class="assign-compaign-dd-list">
+                                                            <li>Actions</li>
+                                                            <li class="active">
+                                                                <a href="#">
+                                                                    <div class="icon-box02"></div> Edit</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <div class="icon-box06"></div> Archive</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <div class="icon-box08"></div> Show Details</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <div class="icon-box04"></div> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="check-box-container">
+                                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="bg-F2C8B6 compaign-holder-img">RN</div>
+                                                    <div class="compaign-holder-name">Rafay Nadeem</div>
+                                                </div>
+                                            </td>
+                                            <td>120</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <div class="dd-select-field-outer agent-dd-field">
+                                                    <select name="location" class="dd-select-field">
+                                                        <option value="">Agent</option>
+                                                        <option value="">Option 01</option>
+                                                        <option value="">Option 02</option>
+                                                        <option value="">Option 03</option>
+                                                      </select>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="info-sign-box">
+                                                    <a href="#">
+                                                        <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                    </a>
+                                                    <div class="campaign-detail-box">
+                                                        <ul class="campaign-detail-list">
+                                                            <li>
+                                                                <div class="campaign-info-list">Created</div>
+                                                                <div class="campaign-related-list">11 May 2020</div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="campaign-info-list">Modified</div>
+                                                                <div class="campaign-related-list">12 August 2021</div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="campaign-info-list">Address</div>
+                                                                <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="assign-campaign-box">
+                                                    <div class="assign-compaign-btn">...</div>
+                                                    <div class="assign-compaign-dd">
+                                                        <ul class="assign-compaign-dd-list">
+                                                            <li>Actions</li>
+                                                            <li class="active">
+                                                                <a href="#">
+                                                                    <div class="icon-box02"></div> Edit</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <div class="icon-box06"></div> Archive</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <div class="icon-box08"></div> Show Details</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <div class="icon-box04"></div> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="check-box-container">
+                                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="bg-F499DA compaign-holder-img">RN</div>
+                                                    <div class="compaign-holder-name">Rafay Nadeem</div>
+                                                </div>
+                                            </td>
+                                            <td>120</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <div class="dd-select-field-outer agent-dd-field">
+                                                    <select name="location" class="dd-select-field">
+                                                        <option value="">Agent</option>
+                                                        <option value="">Option 01</option>
+                                                        <option value="">Option 02</option>
+                                                        <option value="">Option 03</option>
+                                                      </select>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="info-sign-box">
+                                                    <a href="#">
+                                                        <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                    </a>
+                                                    <div class="campaign-detail-box">
+                                                        <ul class="campaign-detail-list">
+                                                            <li>
+                                                                <div class="campaign-info-list">Created</div>
+                                                                <div class="campaign-related-list">11 May 2020</div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="campaign-info-list">Modified</div>
+                                                                <div class="campaign-related-list">12 August 2021</div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="campaign-info-list">Address</div>
+                                                                <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="assign-campaign-box">
+                                                    <div class="assign-compaign-btn">...</div>
+                                                    <div class="assign-compaign-dd">
+                                                        <ul class="assign-compaign-dd-list">
+                                                            <li>Actions</li>
+                                                            <li class="active">
+                                                                <a href="#">
+                                                                    <div class="icon-box02"></div> Edit</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <div class="icon-box06"></div> Archive</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <div class="icon-box08"></div> Show Details</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <div class="icon-box04"></div> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </thead>
+                            </table>
+                        </div>
+                        <div class="mobile-sec">
+                            <ul class="mobile-sec-listing">
+                                <li>
+                                    <div class="first-box">
+                                        <div class="campaign-type-box">
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                            <div class="d-flex align-items-center agent-name-container">
+                                                <div class="compaign-holder-img">RN</div>
+                                                <div class="compaign-holder-name">Rafay Nadeem</div>
+                                            </div>
+                                        </div>
+                                        <div class="campaing-info-box">
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="assign-campaign-box">
+                                                <div class="assign-campaign-click-box">...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box06"></div> Archive</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box08"></div> Show Details</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="campaign-status-box campaign-marked">
+                                        <div class="dd-select-field-outer agent-dd-field">
+                                            <select name="location" class="dd-select-field">
+                                                <option value="">Agent</option>
+                                                <option value="">Option 01</option>
+                                                <option value="">Option 02</option>
+                                                <option value="">Option 03</option>
+                                              </select>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="first-box">
+                                        <div class="campaign-type-box">
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                            <div class="d-flex align-items-center agent-name-container">
+                                                <div class="compaign-holder-img">RN</div>
+                                                <div class="compaign-holder-name">Rafay Nadeem</div>
+                                            </div>
+                                        </div>
+                                        <div class="campaing-info-box">
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="assign-campaign-box">
+                                                <div class="assign-campaign-click-box">...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box06"></div> Archive</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box08"></div> Show Details</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="campaign-status-box campaign-marked">
+                                        <div class="dd-select-field-outer agent-dd-field">
+                                            <select name="location" class="dd-select-field">
+                                                <option value="">Agent</option>
+                                                <option value="">Option 01</option>
+                                                <option value="">Option 02</option>
+                                                <option value="">Option 03</option>
+                                              </select>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="first-box">
+                                        <div class="campaign-type-box">
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                            <div class="d-flex align-items-center agent-name-container">
+                                                <div class="compaign-holder-img">RN</div>
+                                                <div class="compaign-holder-name">Rafay Nadeem</div>
+                                            </div>
+                                        </div>
+                                        <div class="campaing-info-box">
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="assign-campaign-box">
+                                                <div class="assign-campaign-click-box">...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box06"></div> Archive</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box08"></div> Show Details</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="campaign-status-box campaign-marked">
+                                        <div class="dd-select-field-outer agent-dd-field">
+                                            <select name="location" class="dd-select-field">
+                                                <option value="">Agent</option>
+                                                <option value="">Option 01</option>
+                                                <option value="">Option 02</option>
+                                                <option value="">Option 03</option>
+                                              </select>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="first-box">
+                                        <div class="campaign-type-box">
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                            <div class="d-flex align-items-center agent-name-container">
+                                                <div class="compaign-holder-img">RN</div>
+                                                <div class="compaign-holder-name">Rafay Nadeem</div>
+                                            </div>
+                                        </div>
+                                        <div class="campaing-info-box">
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="assign-campaign-box">
+                                                <div class="assign-campaign-click-box">...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box06"></div> Archive</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box08"></div> Show Details</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="campaign-status-box campaign-marked">
+                                        <div class="dd-select-field-outer agent-dd-field">
+                                            <select name="location" class="dd-select-field">
+                                                <option value="">Agent</option>
+                                                <option value="">Option 01</option>
+                                                <option value="">Option 02</option>
+                                                <option value="">Option 03</option>
+                                              </select>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="first-box">
+                                        <div class="campaign-type-box">
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                            <div class="d-flex align-items-center agent-name-container">
+                                                <div class="compaign-holder-img">RN</div>
+                                                <div class="compaign-holder-name">Rafay Nadeem</div>
+                                            </div>
+                                        </div>
+                                        <div class="campaing-info-box">
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="assign-campaign-box">
+                                                <div class="assign-campaign-click-box">...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box06"></div> Archive</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box08"></div> Show Details</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="campaign-status-box campaign-marked">
+                                        <div class="dd-select-field-outer agent-dd-field">
+                                            <select name="location" class="dd-select-field">
+                                                <option value="">Agent</option>
+                                                <option value="">Option 01</option>
+                                                <option value="">Option 02</option>
+                                                <option value="">Option 03</option>
+                                              </select>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="first-box">
+                                        <div class="campaign-type-box">
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                            <div class="d-flex align-items-center agent-name-container">
+                                                <div class="compaign-holder-img">RN</div>
+                                                <div class="compaign-holder-name">Rafay Nadeem</div>
+                                            </div>
+                                        </div>
+                                        <div class="campaing-info-box">
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="assign-campaign-box">
+                                                <div class="assign-campaign-click-box">...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box06"></div> Archive</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box08"></div> Show Details</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="campaign-status-box campaign-marked">
+                                        <div class="dd-select-field-outer agent-dd-field">
+                                            <select name="location" class="dd-select-field">
+                                                <option value="">Agent</option>
+                                                <option value="">Option 01</option>
+                                                <option value="">Option 02</option>
+                                                <option value="">Option 03</option>
+                                              </select>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade campaign-listing-content-tab" id="campaign-tab-content02" role="tabpanel" aria-labelledby="campaign-tab02">
+                        ...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add Client Modal -->
+    <div class="modal fade addclientmodal" id="AddAgent" tabindex="-1" aria-labelledby="AddAgentLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="AddAgentLabel">Add New Client</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="campaign-field-wrapper mb-15">
+                        <label for="campaign" class="campiagn-title">Agent Name</label>
+                        <input type="text" name="campaign" class="campiagn-input-field" placeholder="Employee Name or #">
+                    </div>
+                    <div class="campaign-field-wrapper mb-15">
+                        <label for="campaign" class="campiagn-title">Employee ID</label>
+                        <input type="text" name="campaign" class="campiagn-input-field" placeholder="Select Agent">
+                    </div>
+                    <div class="campaign-field-wrapper mb-40">
+                        <label for="campaign" class="campiagn-title">Position</label>
+                        <div class="dd-select-field-outer">
+                            <select name="location" class="dd-select-field">
+                                <option value="">Agent or Admin</option>
+                                <option value="">Option 01</option>
+                                <option value="">Option 02</option>
+                                <option value="">Option 03</option>
+                              </select>
+                        </div>
+                    </div>
+                    <div class="campaign-field-wrapper mb-40">
+                        <label for="campaign" class="campiagn-title">Default Visibility</label>
+                        <div class="dd-select-field-outer">
+                            <select name="location" class="dd-select-field">
+                                <option value="">View all Campaigns</option>
+                                <option value="">Option 01</option>
+                                <option value="">Option 02</option>
+                                <option value="">Option 03</option>
+                              </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn create-campaign-btn">Cancel</button>
+                    <button type="button" class="btn btn-primary">Add Client</button>
+                </div>
+            </div>
+        </div>
+        <script src="assets/js/jquery-3.6.0.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $(".assign-compaign-btn").click(function() {
+                    $(".assign-compaign-dd").toggleClass('show');
+                });
+            });
+            document.getElementById('select-all').onclick = function() {
+                var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+                for (var checkbox of checkboxes) {
+                    checkbox.checked = this.checked;
+                }
+            }
+            $(".hamburger-icon").click(function(e) {
+                e.preventDefault();
+                $(".mobile-side-bar").addClass("active");
+            });
+            $(".close-cross-btn").click(function(e) {
+                e.preventDefault();
+                $(".mobile-side-bar").removeClass("active");
+            });
+            $(document).ready(function() {
+                $("#mobile-campagin-action").click(function() {
+                    $(".mobile-campagin-action-dd").toggleClass('show');
+                });
+            });
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <!--Title-->
+    <title>Bi-State, Pest Control, Limited Company</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--description-->
+    <meta name="description" content="">
+    <!--Key Words-->
+    <meta name="keywords" content="">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-tagsinput.css">
+    <!--style-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+</head>
+
+<body class="bg-fafbff">
+    <header>
+        <nav class="navbar navbar-expand-lg admin-navigation">
+            <div class="container-fluid align_right">
+                <a class="navbar-brand admin-logo" href="index.html"><img src="assets/images/admin-icon.png" alt=""></a>
+                <button class="navbar-toggler hamburger-icon-box mobile-toggle-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon hamburger-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse admin-navigation-inner" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto admin-navigation-list">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="edit-campaign.html">Campaigns</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="client.html">Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="agents.html">Agents</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="admin-panel-list">
+                    <li>
+                        <a href="#"><img src="assets/images/bell-icon.svg" alt=""></a>
+                        <div class="notification-dd">
+                            <ul class="notification-dd-list">
+                                <li class="active">
+                                    <a href="#">
+                                        <div class="icon-holder"><img src="assets/images/yellow-play-icon.svg" alt=""></div>
+                                        <div class="notification-text">12 new campaigns waiting for approval</div>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">
+                                        <div class="icon-holder"><img src="assets/images/yellow-edit-icon.svg" alt=""></div>
+                                        <div class="notification-text">3 new campaign edits pending approval</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon-holder"><img src="assets/images/green-circle-check-mark.svg" alt=""></div>
+                                        <div class="notification-text">6 campaigns approved by <span>Morning Star</span></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/images/admin-img.png" alt=""></a>
+                    </li>
+                </ul>
+                <div class="mobile-side-bar">
+                    <div class="close-cross">
+                        <a href="#" class="close-cross-btn"><img src="assets/images/sidebar-cross-icon.svg" alt=""></a>
+                    </div>
+                    <div class="side-bar-logo-box">
+                        <a href="index.html">
+                            <span><img src="assets/images/admin-icon.png" alt=""></span> SEO Tool
+                        </a>
+                    </div>
+                    <ul class="mobile-side-nav">
+                        <li class="active">
+                            <a href="edit-campaign.html">Campaigns</a>
+                        </li>
+                        <li>
+                            <a href="client.html">Clients</a>
+                        </li>
+                        <li>
+                            <a href="#">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="add-compaign-wrapper">
+        <div class="container">
+            <div class="add-compaign-inner">
+                <div class="mobile-title">Camapigns</div>
+                <h2 class="heading-arrow"> <span class="hide-on-mobile">Add</span> New Campaign</h2>
+                <form action="#">
+                    <div class="campaign-field-wrapper mb-40">
+                        <label for="campaign" class="campiagn-title">Campaign Name</label>
+                        <input type="text" name="campaign" class="campiagn-input-field" placeholder="e.g Client-X-Bourville">
+                    </div>
+                    <div class="campaign-field-wrapper mb-40">
+                        <label for="campaign" class="campiagn-title">Select Location of business</label>
+                        <div class="dd-select-field-outer">
+                            <select name="location" class="dd-select-field">
+                                <option value="">e.g Client-X-Bourville</option>
+                                <option value="">Option 01</option>
+                                <option value="">Option 02</option>
+                                <option value="">Option 03</option>
+                              </select>
+                        </div>
+                    </div>
+                    <div class="campaign-field-wrapper mb-40">
+                        <label for="campaign" class="campiagn-title">Select Client</label>
+                        <div class="select-clint-box">
+                            <div class="dd-select-field-outer">
+                                <select name="client" class="dd-select-field">
+                                <option value="">Client name</option>
+                                <option value="">Option 01</option>
+                                <option value="">Option 02</option>
+                                <option value="">Option 03</option>
+                              </select>
+                            </div>
+                            <div class="add-client-btn">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#campaignmodal"> <span><img src="assets/images/add-icon.svg" alt=""></span> Add New Client</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campaign-field-wrapper mb-40">
+                        <label for="campaign" class="campiagn-title">Keywords</label>
+                        <div class="keyword-wrapper">
+                            <div class="selected-box">
+                                <h5>Selected</h5>
+                                <input type="text" class="selected-keyword-filed" id="#inputTag" value="Keyword, Keyword" data-role="tagsinput">
+                            </div>
+                            <div class="potential-keywords">
+                                <h5>Potential Keywords</h5>
+                                <ul class="potential-keyword-list">
+                                    <li><a href="#">Keyword</a></li>
+                                    <li><a href="#">Keyword</a></li>
+                                    <li><a href="#">Keyword</a></li>
+                                    <li><a href="#">Keyword</a></li>
+                                    <li><a href="#">Keyword</a></li>
+                                    <li><a href="#">Keyword</a></li>
+                                    <li><a href="#">Keyword</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit-btn-box">
+                        <input type="submit" value="Submit for Analysis" class="submit-analysis" data-bs-toggle="modal" data-bs-target="#campaignmodal">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal campaign-modal-wrapper fade" id="campaignmodal" tabindex="-1" aria-labelledby="campaign-modal-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="campaign-modal-label">Campaign Added</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Your initial keyword analysis will be completed in 5-10 minutes and we will notify you when it’s done</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn create-campaign-btn">Create Another Campaign</button>
+                    <button type="button" class="btn btn-primary">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/typeahead.bundle.min.js"></script>
+    <script src="assets/js/bootstrap-tagsinput.min.js"></script>
+    <script>
+        $("#inputTag").tagsinput('items');
+        $(".hamburger-icon").click(function(e) {
+            e.preventDefault();
+            $(".mobile-side-bar").addClass("active");
+        });
+        $(".close-cross-btn").click(function(e) {
+            e.preventDefault();
+            $(".mobile-side-bar").removeClass("active");
+        });
+    </script>
+</body>
+
+</html>

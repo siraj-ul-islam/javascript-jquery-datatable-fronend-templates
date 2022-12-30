@@ -1,0 +1,393 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <!--Title-->
+    <title>Bi-State, Pest Control, Limited Company</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--description-->
+    <meta name="description" content="">
+    <!--Key Words-->
+    <meta name="keywords" content="">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-tagsinput.css">
+    <!--style-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg admin-navigation">
+            <div class="container-fluid align_right">
+                <a class="navbar-brand admin-logo" href="index.html"><img src="assets/images/admin-icon.png" alt=""></a>
+                <button class="navbar-toggler hamburger-icon-box mobile-toggle-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon hamburger-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse admin-navigation-inner" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto admin-navigation-list">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="edit-campaign.html">Campaigns</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="client.html">Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="agents.html">Agents</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="admin-panel-list">
+                    <li>
+                        <a href="#"><img src="assets/images/bell-icon.svg" alt=""></a>
+                        <div class="notification-dd">
+                            <ul class="notification-dd-list">
+                                <li class="active">
+                                    <a href="#">
+                                        <div class="icon-holder"><img src="assets/images/yellow-play-icon.svg" alt=""></div>
+                                        <div class="notification-text">12 new campaigns waiting for approval</div>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">
+                                        <div class="icon-holder"><img src="assets/images/yellow-edit-icon.svg" alt=""></div>
+                                        <div class="notification-text">3 new campaign edits pending approval</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon-holder"><img src="assets/images/green-circle-check-mark.svg" alt=""></div>
+                                        <div class="notification-text">6 campaigns approved by <span>Morning Star</span></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/images/admin-img.png" alt=""></a>
+                    </li>
+                </ul>
+                <div class="mobile-side-bar">
+                    <div class="close-cross">
+                        <a href="#" class="close-cross-btn"><img src="assets/images/sidebar-cross-icon.svg" alt=""></a>
+                    </div>
+                    <div class="side-bar-logo-box">
+                        <a href="index.html">
+                            <span><img src="assets/images/admin-icon.png" alt=""></span> SEO Tool
+                        </a>
+                    </div>
+                    <ul class="mobile-side-nav">
+                        <li class="active">
+                            <a href="edit-campaign.html">Campaigns</a>
+                        </li>
+                        <li>
+                            <a href="client.html">Clients</a>
+                        </li>
+                        <li>
+                            <a href="#">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="add-compaign-wrapper edit-campaign-wrapper">
+        <div class="container">
+            <div class="mobile-title">Camapigns</div>
+            <div class="campaign-ready-box">
+                <div class="campaign-ready-content">
+                    <div class="campaign-ready-content-inner">This campaign is ready to start</div>
+                    <div class="campaign-ready-tags">
+                        <div class="campaign-analysis-btn complete-analysis-btn">
+                            <figure><img src="assets/images/tick-circle-icon.svg" alt=""></figure>
+                            <a href="#">ANALYSIS Completed</a>
+                        </div>
+                        <div class="start-new-campaign"><a href="#"><span><img src="assets/images/grey-play-icon.svg" alt=""></span> Start Campaign</a></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="add-compaign-inner">
+                <div class="edit-campaign-heading-box">
+                    <h2 class="heading-arrow"><span class="previous-screen-btn"><a href="#"><img src="assets/images/left-black-arrow.svg" alt=""></a></span>Edit Campaign</h2>
+                    <div class="edit-campaign-btn-box">
+                        <div class="cancel-btn"><a href="#">Cancel</a></div>
+                        <div class="mobile-campagin-action-btn-box">
+                            <div class="mobile-campagin-action-btn" id="mobile-campagin-action">
+                                <a href="#"><img src="assets/images/mobile-campaign-btn.svg" alt=""></a>
+                            </div>
+                            <div class="mobile-campagin-action-dd">
+                                <ul class="mobile-campagin-action-list">
+                                    <li><a href="#">Action</a></li>
+                                    <li>
+                                        <a href="edit-campaign.html">
+                                            <div class="edit-campaign-box">
+                                                <div class="edit-campaign-btn">
+                                                    <span class="edit-campaign-inner"><img src="assets/images/edit-icon.svg" alt=""></span> Edit Campaign
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#campaign-detail-modal">
+                                            <div class="compaign-info-box">
+                                                <span class="edit-campaign-inner"><img src="assets/images/info-sign.svg" alt=""></span> Details
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="submit-changes-btn"><a href="#">Submit <span class="hide">Changes for Approval</span></a></div>
+                    </div>
+                </div>
+                <form action="#">
+                    <div class="campaign-field-wrapper mb-40">
+                        <label for="campaign" class="campiagn-title">Campaign Name</label>
+                        <input type="text" name="campaign" class="campiagn-input-field" placeholder="Campaign A">
+                    </div>
+                    <div class="campaign-field-wrapper edit-campaign-location mb-40">
+                        <div class="compaign-detail-inner">
+                            <h6>Location of business</h6>
+                            <p> <span>CornVille Bakery</span> 1133 Monastery Dr, Oakville, ON L6M 2A2, Canada</p>
+                            <div class="location-cross-icon">
+                                <a href="#">
+                                    <figure><img src="assets/images/location-cross-icon.svg" alt=""></figure>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campaign-field-wrapper mb-40">
+                        <label for="campaign" class="campiagn-title">Select Client</label>
+                        <div class="select-clint-box">
+                            <div class="dd-select-field-outer">
+                                <select name="client" class="dd-select-field">
+                                <option value="">Client-X</option>
+                                <option value="">Option 01</option>
+                                <option value="">Option 02</option>
+                                <option value="">Option 03</option>
+                              </select>
+                            </div>
+                            <div class="add-client-btn">
+                                <a href="#"> <span><img src="assets/images/add-icon.svg" alt=""></span> Add New Client</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campaign-field-wrapper mb-25">
+                        <label for="campaign" class="campiagn-title">Keywords</label>
+                        <div class="keyword-wrapper">
+                            <div class="selected-box">
+                                <h5>Selected</h5>
+                                <input type="text" class="selected-keyword-filed" id="#inputTag" value="Keyword, Keyword" data-role="tagsinput">
+                            </div>
+                            <div class="potential-keywords">
+                                <h5>Potential Keywords</h5>
+                                <ul class="potential-keyword-list">
+                                    <li><a href="#">Keyword</a></li>
+                                    <li><a href="#">Keyword</a></li>
+                                    <li><a href="#">Keyword</a></li>
+                                    <li><a href="#">Keyword</a></li>
+                                    <li><a href="#">Keyword</a></li>
+                                    <li><a href="#">Keyword</a></li>
+                                    <li><a href="#">Keyword</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit-btn-box">
+                        <input type="submit" value="Submit for Analysis" class="submit-analysis" data-bs-toggle="modal" data-bs-target="#campaignmodal">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="keyword-analysis-sec">
+        <div class="container">
+            <div class="keyword-analysis-wrapper">
+                <div class="keyword-analysis-heading">
+                    <h2>Keyword Analysis</h2>
+                    <small>Selected (7/7)</small>
+                </div>
+                <div class="analysis-card mb-25">
+                    <div class="delete-btn">
+                        <a href="#">
+                            <figure><img src="assets/images/delete-icon.svg" alt=""></figure>
+                        </a>
+                    </div>
+                    <div class="keyword-selected-btn mb-25"><a href="#">Pharmacy</a></div>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-6 order02">
+                            <div class="mobile-hide-box relevence-box">
+                                <div class="rank-box-content">Revelence</div>
+                                <div class="category-box">
+                                    <div class="category-content-box">
+                                        Category
+                                    </div>
+                                    <div class="category-tag">
+                                        <div class="rank-status error-box"> <span><img src="assets/images/error-icon.svg" alt=""></span> Poor</div>
+                                    </div>
+                                </div>
+                                <div class="category-box">
+                                    <div class="category-content-box">
+                                        Website
+                                    </div>
+                                    <div class="category-tag">
+                                        <div class="rank-status success-box"> <span><img src="assets/images/tick-circle.svg" alt=""></span> Good</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mobile-hide-box relevence-box">
+                                <div class="relevence-inner-box mb-25">
+                                    <div class="search-volum-heading">Search Volume</div>
+                                    <div class="search-volum-count">12.4k</div>
+                                </div>
+                                <div class="relevence-inner-box">
+                                    <div class="search-volum-heading">Search Volume</div>
+                                    <div class="search-volum-count">12.4k</div>
+                                </div>
+                            </div>
+                            <div class="mobile-show-box mobil-half-box relevence-box">
+                                <div class="relevence-inner-box mb-25">
+                                    <div class="search-volum-heading">Search Volume</div>
+                                    <div class="search-volum-count">12.4k</div>
+                                </div>
+                                <div class="relevence-inner-box">
+                                    <div class="search-volum-heading">Search Volume</div>
+                                    <div class="search-volum-count">12.4k</div>
+                                </div>
+                            </div>
+                            <div class="mobile-show-box mobil-second-half-box relevence-box">
+                                <div class="rank-box-content">Revelence</div>
+                                <div class="category-box">
+                                    <div class="category-content-box">
+                                        Category
+                                    </div>
+                                    <div class="category-tag">
+                                        <div class="rank-status error-box"> <span><img src="assets/images/error-icon.svg" alt=""></span> Poor</div>
+                                    </div>
+                                </div>
+                                <div class="category-box">
+                                    <div class="category-content-box">
+                                        Website
+                                    </div>
+                                    <div class="category-tag">
+                                        <div class="rank-status success-box"> <span><img src="assets/images/tick-circle.svg" alt=""></span> Good</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-6 order01">
+                            <div class="keyword-map-wrapper">
+                                <div class="rank-box">
+                                    <div class="rank-box-content">Keyword Rank</div>
+                                    <div class="rank-box-rating">7.2</div>
+                                    <div class="rank-status ranking-with-tag success-box"> <span><img src="assets/images/tick-circle.svg" alt=""></span> Good</div>
+                                </div>
+                                <div class="campaign-edit-listing-map">
+                                    <figure><img src="assets/images/fainted-map.png" class="img-fluid" alt=""></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-box">
+                    <div class="">
+                        <div class="keyword-selected-btn"><a href="#">Pharmacy</a></div>
+                    </div>
+                    <div class="">
+                        <div class="campaign-analysis-btn">
+                            <figure><img src="assets/images/warning-icon.svg" alt=""></figure>
+                            <a href="#">ANALYSIS in PROGRESS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal campaign-modal-wrapper fade" id="campaignmodal" tabindex="-1" aria-labelledby="campaign-modal-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="campaign-modal-label">Campaign Added</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Your initial keyword analysis will be completed in 5-10 minutes and we will notify you when it’s done</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn create-campaign-btn">Create Another Campaign</button>
+                    <button type="button" class="btn btn-primary">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Campaign Detail Modal -->
+    <div class="modal campaign-detail-popup fade" id="campaign-detail-modal" tabindex="-1" aria-labelledby="campaign-detail-heading" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="campaign-detail-heading">Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="compaign-detail-inner">
+                        <h6>Location</h6>
+                        <p> <span>Location Name</span> 1133 Monastery Dr, Oakville, ON L6M 2A2, Canada</p>
+                    </div>
+                    <div class="popup-agent-details">
+                        <div class="compaign-detail-inner compaign-center-box">
+                            <h6 class="agent-type">Admin</h6>
+                            <div class="compaign-holder">
+                                <div class="compaign-holder-img">RS</div>
+                                <div class="compaign-holder-name">Ryan Smith</div>
+                            </div>
+                        </div>
+                        <div class="compaign-detail-inner">
+                            <h6 class="agent-type">Agent/s</h6>
+                            <div class="compaign-holder">
+                                <div class="compaign-holder-img">TW</div>
+                                <div class="compaign-holder-name">Tim Woods</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="create-date-box">
+                        <div class="create-date-label">created DATE</div>
+                        <div class="create-date-time">9:00AM, 10 March 2021</div>
+                    </div>
+                    <div class="modify-date-box">
+                        <div class="modify-date-label">Modified DATE</div>
+                        <div class="modify-date-time">10:00PM, 15 March 2021</div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn close-campaign-detail-btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/typeahead.bundle.min.js"></script>
+    <script src="assets/js/bootstrap-tagsinput.min.js"></script>
+    <script>
+        $("#inputTag").tagsinput('items');
+        $(".hamburger-icon").click(function(e) {
+            e.preventDefault();
+            $(".mobile-side-bar").addClass("active");
+        });
+        $(".close-cross-btn").click(function(e) {
+            e.preventDefault();
+            $(".mobile-side-bar").removeClass("active");
+        });
+        $(document).ready(function() {
+            $("#mobile-campagin-action").click(function() {
+                $(".mobile-campagin-action-dd").toggleClass('show');
+            });
+        });
+    </script>
+</body>
+
+</html>

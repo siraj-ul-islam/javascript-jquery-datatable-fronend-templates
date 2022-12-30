@@ -1,0 +1,40 @@
+{
+    "status": "success",
+    "properties": [
+    {
+
+    "name": "1 Kanal House for Sale",
+    "price": "6.95 Crore",
+    "imageURL": "https://fibermountain.com/launchpad-images/sample-image-1.jpg"
+    },
+    
+    {
+    "name": "10 Marla House for Sale",
+    "price": "1 Crore",
+    "imageURL": "https://fibermountain.com/launchpad-images/sample-image-2.jpg"
+    },
+    {
+    "name": "2 Kanal House for Sale",
+    "price": "3 Crore",
+    "imageURL": "https://fibermountain.com/launchpad-images/sample-image-3.jpg"
+    },
+    {
+    "name": "3 Kanal House for Sale",
+    "price": "2 Crore",
+    "imageURL": "https://fibermountain.com/launchpad-images/sample-image-1.jpg"
+    },
+    {
+    "name": "5 Marla House for Sale",
+    "price": "38 Lakh",
+    "imageURL": "https://fibermountain.com/launchpad-images/sample-image-2.jpg"
+    },
+    {
+
+    "name": "Farm House for Sale",
+    "price": "1 Crore",
+    "imageURL": "https://fibermountain.com/launchpad-images/sample-image-2.jpg"
+    }
+
+    ]
+    }
+    

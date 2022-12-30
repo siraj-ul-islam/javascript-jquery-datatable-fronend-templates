@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+        #box2 {
+            /* background: pink; */
+            padding: 10px;
+            border: 1px solid pink;
+        }
+
+        #box {
+            /* background: pink; */
+            padding: 10px;
+            border: 1px solid red;
+            position: fixed;
+            left: 30px;
+            bottom: 100px;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+
+        .first {
+            background: blue;
+        }
+
+        .second {
+            background: purple;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body style="width: 500px;">
+    <!-- x consequat commodo adipisicing exercitation aute excepteur occaecat ullamco duis aliqua id magna ullamco eu. Do
+    aute ipsum ipsum ullamco cillum consectetur ut et aute consectetur labore. Fugiat laborum incididunt tempor eu
+    consequat enim dolore proident. Qui laborum do non excepteur nulla magna eiusmod consectetur in. Aliqua et aliqua
+    officia quis et incididunt voluptate non anim reprehenderit adipisicing dolore ut consequat deserunt mollit dolore.
+    Aliquip nulla enim veniam non fugiat id cupidatat nulla elit cupidatat commodo velit ut eiusmod cupidatat elit
+    dolore
+    x consequat commodo adipisicing exercitation aute excepteur occaecat ullamco duis aliqua id magna ullamco eu. Do
+    aute ipsum ipsum ullamco cillum consectetur ut et aute consectetur labore. Fugiat laborum incididunt tempor eu
+    consequat enim dolore proident. Qui laborum do non excepteur nulla magna eiusmod consectetur in. Aliqua et aliqua
+    officia quis et incididunt voluptate non anim reprehenderit adipisicing dolore ut consequat deserunt mollit dolore.
+    Aliquip nulla enim veniam non fugiat id cupidatat nulla elit cupidatat commodo velit ut eiusmod cupidatat elit
+    dolore
+    x consequat commodo adipisicing exercitation aute excepteur occaecat ullamco duis aliqua id magna ullamco eu. Do
+    aute ipsum ipsum ullamco cillum consectetur ut et aute consectetur labore. Fugiat laborum incididunt tempor eu
+    consequat enim dolore proident. Qui laborum do non excepteur nulla magna eiusmod consectetur in. Aliqua et aliqua
+    officia quis et incididunt voluptate non anim reprehenderit adipisicing dolore ut consequat deserunt mollit dolore.
+    Aliquip nulla enim veniam non fugiat id cupidatat nulla elit cupidatat commodo velit ut eiusmod cupidatat elit
+    dolore
+    x consequat commodo adipisicing exercitation aute excepteur occaecat ullamco duis aliqua id magna ullamco eu. Do
+    aute ipsum ipsum ullamco cillum consectetur ut et aute consectetur labore. Fugiat laborum incididunt tempor eu
+    consequat enim dolore proident. Qui laborum do non excepteur nulla magna eiusmod consectetur in. Aliqua et aliqua
+    officia quis et incididunt voluptate non anim reprehenderit adipisicing dolore ut consequat deserunt mollit dolore.
+    Aliquip nulla enim veniam non fugiat id cupidatat nulla elit cupidatat commodo velit ut eiusmod cupidatat elit
+    dolore -->
+
+
+
+    <div class="container">
+        <form id="formid">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="name">
+            </div>
+            <div class="form-group">
+                <label for="class">Class</label>
+                <input type="text" class="form-control" id="class" placeholder="name">
+            </div>
+            <div class="form-group">
+                <label for="country">Example select</label>
+                <select class="form-control" id="country">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form>
+    </div>
+
+
+    <div id="box2" class="test">
+        <h2>Test Box</h2>
+        <p> Labore sit culpa <span> Helloe</span> commodo Aliquip consequat ad labore labore mollit ut amet. Sit
+            pariatur tempor
+            proident in veniam .</p>
+        <!-- <p>  Labore sit culpa commodo  Aliquip consequat ad labore labore mollit ut amet. Sit pariatur tempor
+            proident in veniam .</p>
+            <p>  Labore sit culpa commodo  Aliquip consequat ad labore labore mollit ut amet. Sit pariatur tempor
+                proident in veniam .</p>
+                <p>  Labore sit culpa commodo  Aliquip consequat ad labore labore mollit ut amet. Sit pariatur tempor
+                    proident in veniam .</p>            <p>  Labore sit culpa commodo  Aliquip consequat ad labore labore mollit ut amet. Sit pariatur tempor
+                        proident in veniam .</p> -->
+    </div>
+    <!-- <div id="box" class="abc"></div> -->
+
+    <button id="addbutton">add class</button>
+    <button id="removekbutton">remove class</button>
+    <button id="togglebutton">toggle class</button>
+
+
+
+
+
+</body>
+<script src="index1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+
+</html>

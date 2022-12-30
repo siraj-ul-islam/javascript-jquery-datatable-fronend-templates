@@ -1,0 +1,55 @@
+.section-top{
+    border-bottom: 1px solid #333333;
+}
+.run-btn{
+    background-color: white;
+    padding-left: 32px;
+    font-weight: bolder;
+}
+.train-m{
+    border-bottom: 1px solid #333333;
+}
+.selact-btn{
+    padding: 0px;
+}
+.season-number p{
+    margin: 0
+}
+.season-number .btn{
+    background-color: #1c1c1c;
+    padding-inline: 40px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 700;
+}
+.season-number{
+    position: relative;
+}
+.inputDate{
+       position: relative;
+    background: #1c1c1c;
+    border: 0;
+    color: black;
+}
+.inputDate:after{
+       position: absolute;
+    content: 'Select Calender';
+    height: 22px;
+    width: 78%;
+    color: white;
+    right: 20%;
+    background-color: #1c1c1c;
+}
+.table-chack-boxes{
+    float: right;
+}
+.chack-table>:not(caption)>*>* {
+    
+    padding: 1.5rem 1.5rem;}
+.progress-bars .irs--round .irs-grid-pol{
+    background-color: #dedede;
+    display: none;
+}
+.hors-peel img{
+    height: 22px;
+}

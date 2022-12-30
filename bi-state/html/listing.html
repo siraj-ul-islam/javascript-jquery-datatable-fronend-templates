@@ -1,0 +1,2625 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <!--Title-->
+    <title>Bi-State, Pest Control, Limited Company</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--description-->
+    <meta name="description" content="">
+    <!--Key Words-->
+    <meta name="keywords" content="">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--style-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+</head>
+
+<body class="bg-fafbff">
+    <header>
+        <nav class="navbar navbar-expand-lg admin-navigation">
+            <div class="container-fluid align_right">
+                <a class="navbar-brand admin-logo" href="index.html"><img src="assets/images/admin-icon.png" alt=""></a>
+                <button class="navbar-toggler hamburger-icon-box mobile-toggle-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon hamburger-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse admin-navigation-inner" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto admin-navigation-list">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="edit-campaign.html">Campaigns</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="client.html">Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="agents.html">Agents</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="admin-panel-list">
+                    <li>
+                        <a href="#"><img src="assets/images/bell-icon.svg" alt=""></a>
+                        <div class="notification-dd">
+                            <ul class="notification-dd-list">
+                                <li class="active">
+                                    <a href="#">
+                                        <div class="icon-holder"><img src="assets/images/yellow-play-icon.svg" alt=""></div>
+                                        <div class="notification-text">12 new campaigns waiting for approval</div>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">
+                                        <div class="icon-holder"><img src="assets/images/yellow-edit-icon.svg" alt=""></div>
+                                        <div class="notification-text">3 new campaign edits pending approval</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon-holder"><img src="assets/images/green-circle-check-mark.svg" alt=""></div>
+                                        <div class="notification-text">6 campaigns approved by <span>Morning Star</span></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/images/admin-img.png" alt=""></a>
+                    </li>
+                </ul>
+                <div class="mobile-side-bar">
+                    <div class="close-cross">
+                        <a href="#" class="close-cross-btn"><img src="assets/images/sidebar-cross-icon.svg" alt=""></a>
+                    </div>
+                    <div class="side-bar-logo-box">
+                        <a href="index.html">
+                            <span><img src="assets/images/admin-icon.png" alt=""></span> SEO Tool
+                        </a>
+                    </div>
+                    <ul class="mobile-side-nav">
+                        <li class="active">
+                            <a href="edit-campaign.html">Campaigns</a>
+                        </li>
+                        <li>
+                            <a href="client.html">Clients</a>
+                        </li>
+                        <li>
+                            <a href="#">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="campaign-listing-wrapper">
+        <div class="container">
+            <div class="mobile-title">Camapigns</div>
+            <div class="campaign-listing-inner">
+                <h2>Campaigns</h2>
+                <ul class="nav nav-tabs campaign-listing-tab" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="campaign-tab01" data-bs-toggle="tab" data-bs-target="#campaign-tab-content01" type="button" role="tab" aria-controls="home" aria-selected="true">Live (1214)</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="campaign-tab02" data-bs-toggle="tab" data-bs-target="#campaign-tab-content02" type="button" role="tab" aria-controls="profile" aria-selected="false">In Analysis(31)</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="campaign-tab03" data-bs-toggle="tab" data-bs-target="#campaign-tab-content03" type="button" role="tab" aria-controls="contact" aria-selected="false">Pending Approval(32)</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="campaign-tab04" data-bs-toggle="tab" data-bs-target="#campaign-tab-content04" type="button" role="tab" aria-controls="contact" aria-selected="false">Pending Approval(32)</button>
+                    </li>
+                </ul>
+                <div class="tab-content campaign-listing-content" id="myTabContent">
+                    <div class="tab-pane campaign-listing-content-tab fade show active" id="campaign-tab-content01" role="tabpanel" aria-labelledby="campaign-tab01">
+                        <div class="create-new-campaign-btn mobile-hide">
+                            <a href="create-single.html"><span><img src="assets/images/add-icon.svg" alt=""></span> Create New Campaign</a>
+                        </div>
+                        <div class="search-or-sort-box campaign-listing-container">
+                            <div class="select-all-box">
+                                <div class="check-box-container">
+                                    <input type="checkbox" id="select-all" name="">
+                                    <label for="checkbox">Select all</label>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mobile-box">
+                                <div class="sort-box">
+                                    <select name="sort-filed" class="sort-filed">
+                                        <option value="">Sort By</option>
+                                        <option value="">Option 01</option>
+                                        <option value="">Option 02</option>
+                                        <option value="">Option 03</option>
+                                      </select>
+                                </div>
+                                <div class="mobile-show create-new-campaign-btn">
+                                    <a href="create-single.html"><span><img src="assets/images/add-icon.svg" alt=""></span> <span class="mobile-hide">Create New</span> Campaign</a>
+                                </div>
+                                <div class="search-field-outer">
+                                    <input type="text" name="text" class="search-field">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="client-analysis-table-wrapper listing-agent-tab table_responsive">
+                            <table class="client-analysis-table">
+                                <tbody>
+                                    <tr class="selected">
+                                        <td>
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="compaign-name">
+                                                <h6>Campaign X</h6>
+                                                <small>Devor Alliance</small>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="compaign-holder">
+                                                <div class="compaign-holder-img">RN</div>
+                                                <div class="compaign-holder-name">Rafay Nadeem</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="campaign-call-box campaign-call-count">
+                                                <figure><img src="assets/images/phone-icon.svg" alt=""></figure>
+                                                <div class="campaign-call-count">51%</div>
+                                                <figure><img src="assets/images/green-arrow.svg" alt=""></figure>
+                                                <div class="hover-count-box">
+                                                    1.2k Calls
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="campaign-call-box">
+                                                <figure><img src="assets/images/search-icon.svg" alt=""></figure>
+                                                <div class="campaign-call-count">14%</div>
+                                                <figure><img src="assets/images/green-arrow.svg" alt=""></figure>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="campaign-call-box">
+                                                <figure><img src="assets/images/view-icon.svg" alt=""></figure>
+                                                <div class="campaign-call-count">12%</div>
+                                                <figure><img src="assets/images/red-down-arrow.svg" alt=""></figure>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="assign-campaign-box">
+                                                <div>...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box01"></div> Assign to..</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box03"></div> Pause Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="compaign-name">
+                                                <h6>Campaign X</h6>
+                                                <small>Devor Alliance</small>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="compaign-holder">
+                                                <div class="compaign-holder-img">RN</div>
+                                                <div class="compaign-holder-name">Rafay Nadeem</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="campaign-call-box campaign-call-count">
+                                                <figure><img src="assets/images/phone-icon.svg" alt=""></figure>
+                                                <div class="campaign-call-count">51%</div>
+                                                <figure><img src="assets/images/green-arrow.svg" alt=""></figure>
+                                                <div class="hover-count-box">
+                                                    1.2k Calls
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="campaign-call-box">
+                                                <figure><img src="assets/images/search-icon.svg" alt=""></figure>
+                                                <div class="campaign-call-count">14%</div>
+                                                <figure><img src="assets/images/green-arrow.svg" alt=""></figure>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="campaign-call-box">
+                                                <figure><img src="assets/images/view-icon.svg" alt=""></figure>
+                                                <div class="campaign-call-count">12%</div>
+                                                <figure><img src="assets/images/red-down-arrow.svg" alt=""></figure>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="assign-campaign-box">
+                                                <div>...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box01"></div> Assign to..</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box03"></div> Pause Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="compaign-name">
+                                                <h6>Campaign X</h6>
+                                                <small>Devor Alliance</small>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="compaign-holder">
+                                                <div class="compaign-holder-img">RN</div>
+                                                <div class="compaign-holder-name">Rafay Nadeem</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="campaign-call-box campaign-call-count">
+                                                <figure><img src="assets/images/phone-icon.svg" alt=""></figure>
+                                                <div class="campaign-call-count">51%</div>
+                                                <figure><img src="assets/images/green-arrow.svg" alt=""></figure>
+                                                <div class="hover-count-box">
+                                                    1.2k Calls
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="campaign-call-box">
+                                                <figure><img src="assets/images/search-icon.svg" alt=""></figure>
+                                                <div class="campaign-call-count">14%</div>
+                                                <figure><img src="assets/images/green-arrow.svg" alt=""></figure>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="campaign-call-box">
+                                                <figure><img src="assets/images/view-icon.svg" alt=""></figure>
+                                                <div class="campaign-call-count">12%</div>
+                                                <figure><img src="assets/images/red-down-arrow.svg" alt=""></figure>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="assign-campaign-box">
+                                                <div>...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box01"></div> Assign to..</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box03"></div> Pause Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="compaign-name">
+                                                <h6>Campaign X</h6>
+                                                <small>Devor Alliance</small>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="compaign-holder">
+                                                <div class="compaign-holder-img">RN</div>
+                                                <div class="compaign-holder-name">Rafay Nadeem</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="campaign-call-box campaign-call-count">
+                                                <figure><img src="assets/images/phone-icon.svg" alt=""></figure>
+                                                <div class="campaign-call-count">51%</div>
+                                                <figure><img src="assets/images/green-arrow.svg" alt=""></figure>
+                                                <div class="hover-count-box">
+                                                    1.2k Calls
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="campaign-call-box">
+                                                <figure><img src="assets/images/search-icon.svg" alt=""></figure>
+                                                <div class="campaign-call-count">14%</div>
+                                                <figure><img src="assets/images/green-arrow.svg" alt=""></figure>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="campaign-call-box">
+                                                <figure><img src="assets/images/view-icon.svg" alt=""></figure>
+                                                <div class="campaign-call-count">12%</div>
+                                                <figure><img src="assets/images/red-down-arrow.svg" alt=""></figure>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="assign-campaign-box">
+                                                <div>...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box01"></div> Assign to..</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box03"></div> Pause Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="compaign-name">
+                                                <h6>Campaign X</h6>
+                                                <small>Devor Alliance</small>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="compaign-holder">
+                                                <div class="compaign-holder-img">RN</div>
+                                                <div class="compaign-holder-name">Rafay Nadeem</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="campaign-call-box campaign-call-count">
+                                                <figure><img src="assets/images/phone-icon.svg" alt=""></figure>
+                                                <div class="campaign-call-count">51%</div>
+                                                <figure><img src="assets/images/green-arrow.svg" alt=""></figure>
+                                                <div class="hover-count-box">
+                                                    1.2k Calls
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="campaign-call-box">
+                                                <figure><img src="assets/images/search-icon.svg" alt=""></figure>
+                                                <div class="campaign-call-count">14%</div>
+                                                <figure><img src="assets/images/green-arrow.svg" alt=""></figure>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="campaign-call-box">
+                                                <figure><img src="assets/images/view-icon.svg" alt=""></figure>
+                                                <div class="campaign-call-count">12%</div>
+                                                <figure><img src="assets/images/red-down-arrow.svg" alt=""></figure>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="assign-campaign-box">
+                                                <div>...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box01"></div> Assign to..</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box03"></div> Pause Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="compaign-name">
+                                                <h6>Campaign X</h6>
+                                                <small>Devor Alliance</small>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="compaign-holder">
+                                                <div class="compaign-holder-img">RN</div>
+                                                <div class="compaign-holder-name">Rafay Nadeem</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="campaign-call-box campaign-call-count">
+                                                <figure><img src="assets/images/phone-icon.svg" alt=""></figure>
+                                                <div class="campaign-call-count">51%</div>
+                                                <figure><img src="assets/images/green-arrow.svg" alt=""></figure>
+                                                <div class="hover-count-box">
+                                                    1.2k Calls
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="campaign-call-box">
+                                                <figure><img src="assets/images/search-icon.svg" alt=""></figure>
+                                                <div class="campaign-call-count">14%</div>
+                                                <figure><img src="assets/images/green-arrow.svg" alt=""></figure>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="campaign-call-box">
+                                                <figure><img src="assets/images/view-icon.svg" alt=""></figure>
+                                                <div class="campaign-call-count">12%</div>
+                                                <figure><img src="assets/images/red-down-arrow.svg" alt=""></figure>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="assign-campaign-box">
+                                                <div>...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box01"></div> Assign to..</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box03"></div> Pause Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="compaign-name">
+                                                <h6>Campaign X</h6>
+                                                <small>Devor Alliance</small>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="compaign-holder">
+                                                <div class="compaign-holder-img">RN</div>
+                                                <div class="compaign-holder-name">Rafay Nadeem</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="campaign-call-box campaign-call-count">
+                                                <figure><img src="assets/images/phone-icon.svg" alt=""></figure>
+                                                <div class="campaign-call-count">51%</div>
+                                                <figure><img src="assets/images/green-arrow.svg" alt=""></figure>
+                                                <div class="hover-count-box">
+                                                    1.2k Calls
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="campaign-call-box">
+                                                <figure><img src="assets/images/search-icon.svg" alt=""></figure>
+                                                <div class="campaign-call-count">14%</div>
+                                                <figure><img src="assets/images/green-arrow.svg" alt=""></figure>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="campaign-call-box">
+                                                <figure><img src="assets/images/view-icon.svg" alt=""></figure>
+                                                <div class="campaign-call-count">12%</div>
+                                                <figure><img src="assets/images/red-down-arrow.svg" alt=""></figure>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="assign-campaign-box">
+                                                <div>...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box01"></div> Assign to..</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box03"></div> Pause Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="mobile-sec">
+                            <ul class="mobile-sec-listing">
+                                <li>
+                                    <div class="first-box">
+                                        <div class="campaign-type-box">
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                            <div class="compaign-name">
+                                                <h6>Campaign X</h6>
+                                                <small>Devor Alliance</small>
+                                            </div>
+                                        </div>
+                                        <div class="campaing-info-box">
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="assign-campaign-box">
+                                                <div class="assign-campaign-click-box">...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box01"></div> Assign to..</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box03"></div> Pause Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="campaign-status-box">
+                                        <div class="campaign-call-box campaign-call-count">
+                                            <figure><img src="assets/images/phone-icon.svg" alt=""></figure>
+                                            <div class="campaign-call-count">51%</div>
+                                            <figure><img src="assets/images/green-arrow.svg" alt=""></figure>
+                                            <div class="hover-count-box">
+                                                1.2k Calls
+                                            </div>
+                                        </div>
+                                        <div class="campaign-call-box">
+                                            <figure><img src="assets/images/search-icon.svg" alt=""></figure>
+                                            <div class="campaign-call-count">14%</div>
+                                            <figure><img src="assets/images/green-arrow.svg" alt=""></figure>
+                                        </div>
+                                        <div class="campaign-call-box">
+                                            <figure><img src="assets/images/view-icon.svg" alt=""></figure>
+                                            <div class="campaign-call-count">12%</div>
+                                            <figure><img src="assets/images/red-down-arrow.svg" alt=""></figure>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="first-box">
+                                        <div class="campaign-type-box">
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                            <div class="compaign-name">
+                                                <h6>Campaign X</h6>
+                                                <small>Devor Alliance</small>
+                                            </div>
+                                        </div>
+                                        <div class="campaing-info-box">
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="assign-campaign-box">
+                                                <div class="assign-campaign-click-box">...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box01"></div> Assign to..</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box03"></div> Pause Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="campaign-status-box">
+                                        <div class="campaign-call-box campaign-call-count">
+                                            <figure><img src="assets/images/phone-icon.svg" alt=""></figure>
+                                            <div class="campaign-call-count">51%</div>
+                                            <figure><img src="assets/images/green-arrow.svg" alt=""></figure>
+                                            <div class="hover-count-box">
+                                                1.2k Calls
+                                            </div>
+                                        </div>
+                                        <div class="campaign-call-box">
+                                            <figure><img src="assets/images/search-icon.svg" alt=""></figure>
+                                            <div class="campaign-call-count">14%</div>
+                                            <figure><img src="assets/images/green-arrow.svg" alt=""></figure>
+                                        </div>
+                                        <div class="campaign-call-box">
+                                            <figure><img src="assets/images/view-icon.svg" alt=""></figure>
+                                            <div class="campaign-call-count">12%</div>
+                                            <figure><img src="assets/images/red-down-arrow.svg" alt=""></figure>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="first-box">
+                                        <div class="campaign-type-box">
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                            <div class="compaign-name">
+                                                <h6>Campaign X</h6>
+                                                <small>Devor Alliance</small>
+                                            </div>
+                                        </div>
+                                        <div class="campaing-info-box">
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="assign-campaign-box">
+                                                <div class="assign-campaign-click-box">...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box01"></div> Assign to..</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box03"></div> Pause Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="campaign-status-box">
+                                        <div class="campaign-call-box campaign-call-count">
+                                            <figure><img src="assets/images/phone-icon.svg" alt=""></figure>
+                                            <div class="campaign-call-count">51%</div>
+                                            <figure><img src="assets/images/green-arrow.svg" alt=""></figure>
+                                            <div class="hover-count-box">
+                                                1.2k Calls
+                                            </div>
+                                        </div>
+                                        <div class="campaign-call-box">
+                                            <figure><img src="assets/images/search-icon.svg" alt=""></figure>
+                                            <div class="campaign-call-count">14%</div>
+                                            <figure><img src="assets/images/green-arrow.svg" alt=""></figure>
+                                        </div>
+                                        <div class="campaign-call-box">
+                                            <figure><img src="assets/images/view-icon.svg" alt=""></figure>
+                                            <div class="campaign-call-count">12%</div>
+                                            <figure><img src="assets/images/red-down-arrow.svg" alt=""></figure>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="first-box">
+                                        <div class="campaign-type-box">
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                            <div class="compaign-name">
+                                                <h6>Campaign X</h6>
+                                                <small>Devor Alliance</small>
+                                            </div>
+                                        </div>
+                                        <div class="campaing-info-box">
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="assign-campaign-box">
+                                                <div class="assign-campaign-click-box">...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box01"></div> Assign to..</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box03"></div> Pause Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="campaign-status-box">
+                                        <div class="campaign-call-box campaign-call-count">
+                                            <figure><img src="assets/images/phone-icon.svg" alt=""></figure>
+                                            <div class="campaign-call-count">51%</div>
+                                            <figure><img src="assets/images/green-arrow.svg" alt=""></figure>
+                                            <div class="hover-count-box">
+                                                1.2k Calls
+                                            </div>
+                                        </div>
+                                        <div class="campaign-call-box">
+                                            <figure><img src="assets/images/search-icon.svg" alt=""></figure>
+                                            <div class="campaign-call-count">14%</div>
+                                            <figure><img src="assets/images/green-arrow.svg" alt=""></figure>
+                                        </div>
+                                        <div class="campaign-call-box">
+                                            <figure><img src="assets/images/view-icon.svg" alt=""></figure>
+                                            <div class="campaign-call-count">12%</div>
+                                            <figure><img src="assets/images/red-down-arrow.svg" alt=""></figure>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="first-box">
+                                        <div class="campaign-type-box">
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                            <div class="compaign-name">
+                                                <h6>Campaign X</h6>
+                                                <small>Devor Alliance</small>
+                                            </div>
+                                        </div>
+                                        <div class="campaing-info-box">
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="assign-campaign-box">
+                                                <div class="assign-campaign-click-box">...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box01"></div> Assign to..</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box03"></div> Pause Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="campaign-status-box">
+                                        <div class="campaign-call-box campaign-call-count">
+                                            <figure><img src="assets/images/phone-icon.svg" alt=""></figure>
+                                            <div class="campaign-call-count">51%</div>
+                                            <figure><img src="assets/images/green-arrow.svg" alt=""></figure>
+                                            <div class="hover-count-box">
+                                                1.2k Calls
+                                            </div>
+                                        </div>
+                                        <div class="campaign-call-box">
+                                            <figure><img src="assets/images/search-icon.svg" alt=""></figure>
+                                            <div class="campaign-call-count">14%</div>
+                                            <figure><img src="assets/images/green-arrow.svg" alt=""></figure>
+                                        </div>
+                                        <div class="campaign-call-box">
+                                            <figure><img src="assets/images/view-icon.svg" alt=""></figure>
+                                            <div class="campaign-call-count">12%</div>
+                                            <figure><img src="assets/images/red-down-arrow.svg" alt=""></figure>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="first-box">
+                                        <div class="campaign-type-box">
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                            <div class="compaign-name">
+                                                <h6>Campaign X</h6>
+                                                <small>Devor Alliance</small>
+                                            </div>
+                                        </div>
+                                        <div class="campaing-info-box">
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="assign-campaign-box">
+                                                <div class="assign-campaign-click-box">...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box01"></div> Assign to..</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box03"></div> Pause Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="campaign-status-box">
+                                        <div class="campaign-call-box campaign-call-count">
+                                            <figure><img src="assets/images/phone-icon.svg" alt=""></figure>
+                                            <div class="campaign-call-count">51%</div>
+                                            <figure><img src="assets/images/green-arrow.svg" alt=""></figure>
+                                            <div class="hover-count-box">
+                                                1.2k Calls
+                                            </div>
+                                        </div>
+                                        <div class="campaign-call-box">
+                                            <figure><img src="assets/images/search-icon.svg" alt=""></figure>
+                                            <div class="campaign-call-count">14%</div>
+                                            <figure><img src="assets/images/green-arrow.svg" alt=""></figure>
+                                        </div>
+                                        <div class="campaign-call-box">
+                                            <figure><img src="assets/images/view-icon.svg" alt=""></figure>
+                                            <div class="campaign-call-count">12%</div>
+                                            <figure><img src="assets/images/red-down-arrow.svg" alt=""></figure>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="first-box">
+                                        <div class="campaign-type-box">
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                            <div class="compaign-name">
+                                                <h6>Campaign X</h6>
+                                                <small>Devor Alliance</small>
+                                            </div>
+                                        </div>
+                                        <div class="campaing-info-box">
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="assign-campaign-box">
+                                                <div class="assign-campaign-click-box">...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box01"></div> Assign to..</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box03"></div> Pause Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="campaign-status-box">
+                                        <div class="campaign-call-box campaign-call-count">
+                                            <figure><img src="assets/images/phone-icon.svg" alt=""></figure>
+                                            <div class="campaign-call-count">51%</div>
+                                            <figure><img src="assets/images/green-arrow.svg" alt=""></figure>
+                                            <div class="hover-count-box">
+                                                1.2k Calls
+                                            </div>
+                                        </div>
+                                        <div class="campaign-call-box">
+                                            <figure><img src="assets/images/search-icon.svg" alt=""></figure>
+                                            <div class="campaign-call-count">14%</div>
+                                            <figure><img src="assets/images/green-arrow.svg" alt=""></figure>
+                                        </div>
+                                        <div class="campaign-call-box">
+                                            <figure><img src="assets/images/view-icon.svg" alt=""></figure>
+                                            <div class="campaign-call-count">12%</div>
+                                            <figure><img src="assets/images/red-down-arrow.svg" alt=""></figure>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="first-box">
+                                        <div class="campaign-type-box">
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                            <div class="compaign-name">
+                                                <h6>Campaign X</h6>
+                                                <small>Devor Alliance</small>
+                                            </div>
+                                        </div>
+                                        <div class="campaing-info-box">
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="assign-campaign-box">
+                                                <div class="assign-campaign-click-box">...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box01"></div> Assign to..</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box03"></div> Pause Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="campaign-status-box">
+                                        <div class="campaign-call-box campaign-call-count">
+                                            <figure><img src="assets/images/phone-icon.svg" alt=""></figure>
+                                            <div class="campaign-call-count">51%</div>
+                                            <figure><img src="assets/images/green-arrow.svg" alt=""></figure>
+                                            <div class="hover-count-box">
+                                                1.2k Calls
+                                            </div>
+                                        </div>
+                                        <div class="campaign-call-box">
+                                            <figure><img src="assets/images/search-icon.svg" alt=""></figure>
+                                            <div class="campaign-call-count">14%</div>
+                                            <figure><img src="assets/images/green-arrow.svg" alt=""></figure>
+                                        </div>
+                                        <div class="campaign-call-box">
+                                            <figure><img src="assets/images/view-icon.svg" alt=""></figure>
+                                            <div class="campaign-call-count">12%</div>
+                                            <figure><img src="assets/images/red-down-arrow.svg" alt=""></figure>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade campaign-listing-content-tab" id="campaign-tab-content02" role="tabpanel" aria-labelledby="campaign-tab02">
+                        <div class="create-new-campaign-btn mobile-hide">
+                            <a href="create-single.html"><span><img src="assets/images/add-icon.svg" alt=""></span> Create New Campaign</a>
+                        </div>
+                        <div class="search-or-sort-box campaign-listing-container campaign-inprogress">
+                            <div class="select-all-box">
+                                <div class="check-box-container">
+                                    <input type="checkbox" id="all-select" name="">
+                                    <label for="checkbox">Select all</label>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mobile-box">
+                                <div class="sort-box">
+                                    <select name="sort-filed" class="sort-filed">
+                                        <option value="">Sort By</option>
+                                        <option value="">Option 01</option>
+                                        <option value="">Option 02</option>
+                                        <option value="">Option 03</option>
+                                      </select>
+                                </div>
+                                <div class="mobile-show create-new-campaign-btn">
+                                    <a href="create-single.html"><span><img src="assets/images/add-icon.svg" alt=""></span> <span class="mobile-hide">Create New</span> Campaign</a>
+                                </div>
+                                <div class="search-field-outer">
+                                    <input type="text" name="text" class="search-field">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="client-analysis-table-wrapper listing-agent-tab table_responsive">
+                            <table class="client-analysis-table">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="compaign-name">
+                                                <h6>Campaign X</h6>
+                                                <small>Devor Alliance</small>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="compaign-holder">
+                                                <div class="compaign-holder-img">RN</div>
+                                                <div class="compaign-holder-name">Rafay Nadeem</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="campaign-analysis-btn">
+                                                <figure><img src="assets/images/warning-icon.svg" alt=""></figure>
+                                                <a href="#">ANALYSIS in PROGRESS</a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="assign-campaign-box">
+                                                <div>...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box01"></div> Assign to..</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box03"></div> Pause Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box08"></div> Show Details</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="compaign-name">
+                                                <h6>Campaign X</h6>
+                                                <small>Devor Alliance</small>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="compaign-holder">
+                                                <div class="compaign-holder-img">RN</div>
+                                                <div class="compaign-holder-name">Rafay Nadeem</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="campaign-analysis-btn">
+                                                <figure><img src="assets/images/warning-icon.svg" alt=""></figure>
+                                                <a href="#">ANALYSIS in PROGRESS</a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="assign-campaign-box">
+                                                <div>...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box01"></div> Assign to..</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box03"></div> Pause Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box08"></div> Show Details</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="compaign-name">
+                                                <h6>Campaign X</h6>
+                                                <small>Devor Alliance</small>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="compaign-holder">
+                                                <div class="compaign-holder-img">RN</div>
+                                                <div class="compaign-holder-name">Rafay Nadeem</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="campaign-analysis-btn complete-analysis-btn">
+                                                <figure><img src="assets/images/tick-circle-icon.svg" alt=""></figure>
+                                                <a href="#">ANALYSIS Completed</a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="assign-campaign-box">
+                                                <div>...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box01"></div> Assign to..</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box03"></div> Pause Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box08"></div> Show Details</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="compaign-name">
+                                                <h6>Campaign X</h6>
+                                                <small>Devor Alliance</small>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="compaign-holder">
+                                                <div class="compaign-holder-img">RN</div>
+                                                <div class="compaign-holder-name">Rafay Nadeem</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="campaign-analysis-btn complete-analysis-btn">
+                                                <figure><img src="assets/images/tick-circle-icon.svg" alt=""></figure>
+                                                <a href="#">ANALYSIS Completed</a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="assign-campaign-box">
+                                                <div>...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box01"></div> Assign to..</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box03"></div> Pause Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box08"></div> Show Details</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="compaign-name">
+                                                <h6>Campaign X</h6>
+                                                <small>Devor Alliance</small>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="compaign-holder">
+                                                <div class="compaign-holder-img">RN</div>
+                                                <div class="compaign-holder-name">Rafay Nadeem</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="campaign-analysis-btn complete-analysis-btn">
+                                                <figure><img src="assets/images/tick-circle-icon.svg" alt=""></figure>
+                                                <a href="#">ANALYSIS Completed</a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="assign-campaign-box">
+                                                <div>...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box01"></div> Assign to..</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box03"></div> Pause Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box08"></div> Show Details</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="compaign-name">
+                                                <h6>Campaign X</h6>
+                                                <small>Devor Alliance</small>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="compaign-holder">
+                                                <div class="compaign-holder-img">RN</div>
+                                                <div class="compaign-holder-name">Rafay Nadeem</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="campaign-analysis-btn complete-analysis-btn">
+                                                <figure><img src="assets/images/tick-circle-icon.svg" alt=""></figure>
+                                                <a href="#">ANALYSIS Completed</a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="assign-campaign-box">
+                                                <div>...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box01"></div> Assign to..</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box03"></div> Pause Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box08"></div> Show Details</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="compaign-name">
+                                                <h6>Campaign X</h6>
+                                                <small>Devor Alliance</small>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="compaign-holder">
+                                                <div class="compaign-holder-img">RN</div>
+                                                <div class="compaign-holder-name">Rafay Nadeem</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="campaign-analysis-btn complete-analysis-btn">
+                                                <figure><img src="assets/images/tick-circle-icon.svg" alt=""></figure>
+                                                <a href="#">ANALYSIS Completed</a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="assign-campaign-box">
+                                                <div>...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box01"></div> Assign to..</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box03"></div> Pause Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box08"></div> Show Details</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="mobile-sec">
+                            <ul class="mobile-sec-listing">
+                                <li>
+                                    <div class="first-box">
+                                        <div class="campaign-type-box">
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                            <div class="compaign-name">
+                                                <h6>Campaign X</h6>
+                                                <small>Devor Alliance</small>
+                                            </div>
+                                        </div>
+                                        <div class="campaing-info-box">
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="assign-campaign-box">
+                                                <div class="assign-campaign-click-box">...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box01"></div> Assign to..</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box03"></div> Pause Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="campaign-status-box campaign-marked">
+                                        <div class="campaign-analysis-btn">
+                                            <figure><img src="assets/images/warning-icon.svg" alt=""></figure>
+                                            <a href="#">ANALYSIS in PROGRESS</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="first-box">
+                                        <div class="campaign-type-box">
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                            <div class="compaign-name">
+                                                <h6>Campaign X</h6>
+                                                <small>Devor Alliance</small>
+                                            </div>
+                                        </div>
+                                        <div class="campaing-info-box">
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="assign-campaign-box">
+                                                <div class="assign-campaign-click-box">...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box01"></div> Assign to..</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box03"></div> Pause Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="campaign-status-box campaign-marked">
+                                        <div class="campaign-analysis-btn">
+                                            <figure><img src="assets/images/warning-icon.svg" alt=""></figure>
+                                            <a href="#">ANALYSIS in PROGRESS</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="first-box">
+                                        <div class="campaign-type-box">
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                            <div class="compaign-name">
+                                                <h6>Campaign X</h6>
+                                                <small>Devor Alliance</small>
+                                            </div>
+                                        </div>
+                                        <div class="campaing-info-box">
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="assign-campaign-box">
+                                                <div class="assign-campaign-click-box">...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box01"></div> Assign to..</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box03"></div> Pause Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="campaign-status-box campaign-marked">
+                                        <div class="campaign-analysis-btn complete-analysis-btn">
+                                            <figure><img src="assets/images/tick-circle-icon.svg" alt=""></figure>
+                                            <a href="#">ANALYSIS Completed</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="first-box">
+                                        <div class="campaign-type-box">
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                            <div class="compaign-name">
+                                                <h6>Campaign X</h6>
+                                                <small>Devor Alliance</small>
+                                            </div>
+                                        </div>
+                                        <div class="campaing-info-box">
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="assign-campaign-box">
+                                                <div class="assign-campaign-click-box">...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box01"></div> Assign to..</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box03"></div> Pause Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="campaign-status-box campaign-marked">
+                                        <div class="campaign-analysis-btn complete-analysis-btn">
+                                            <figure><img src="assets/images/tick-circle-icon.svg" alt=""></figure>
+                                            <a href="#">ANALYSIS Completed</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="first-box">
+                                        <div class="campaign-type-box">
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                            <div class="compaign-name">
+                                                <h6>Campaign X</h6>
+                                                <small>Devor Alliance</small>
+                                            </div>
+                                        </div>
+                                        <div class="campaing-info-box">
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="assign-campaign-box">
+                                                <div class="assign-campaign-click-box">...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box01"></div> Assign to..</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box03"></div> Pause Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="campaign-status-box campaign-marked">
+                                        <div class="campaign-analysis-btn complete-analysis-btn">
+                                            <figure><img src="assets/images/tick-circle-icon.svg" alt=""></figure>
+                                            <a href="#">ANALYSIS Completed</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="first-box">
+                                        <div class="campaign-type-box">
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                            <div class="compaign-name">
+                                                <h6>Campaign X</h6>
+                                                <small>Devor Alliance</small>
+                                            </div>
+                                        </div>
+                                        <div class="campaing-info-box">
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="assign-campaign-box">
+                                                <div class="assign-campaign-click-box">...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box01"></div> Assign to..</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box03"></div> Pause Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="campaign-status-box campaign-marked">
+                                        <div class="campaign-analysis-btn complete-analysis-btn">
+                                            <figure><img src="assets/images/tick-circle-icon.svg" alt=""></figure>
+                                            <a href="#">ANALYSIS Completed</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="first-box">
+                                        <div class="campaign-type-box">
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                            <div class="compaign-name">
+                                                <h6>Campaign X</h6>
+                                                <small>Devor Alliance</small>
+                                            </div>
+                                        </div>
+                                        <div class="campaing-info-box">
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="assign-campaign-box">
+                                                <div class="assign-campaign-click-box">...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box01"></div> Assign to..</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box03"></div> Pause Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="campaign-status-box campaign-marked">
+                                        <div class="campaign-analysis-btn complete-analysis-btn">
+                                            <figure><img src="assets/images/tick-circle-icon.svg" alt=""></figure>
+                                            <a href="#">ANALYSIS Completed</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="first-box">
+                                        <div class="campaign-type-box">
+                                            <div class="check-box-container">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                            <div class="compaign-name">
+                                                <h6>Campaign X</h6>
+                                                <small>Devor Alliance</small>
+                                            </div>
+                                        </div>
+                                        <div class="campaing-info-box">
+                                            <div class="info-sign-box">
+                                                <a href="#">
+                                                    <figure><img src="assets/images/info-sign.svg" alt=""></figure>
+                                                </a>
+                                                <div class="campaign-detail-box">
+                                                    <ul class="campaign-detail-list">
+                                                        <li>
+                                                            <div class="campaign-info-list">Created</div>
+                                                            <div class="campaign-related-list">11 May 2020</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Modified</div>
+                                                            <div class="campaign-related-list">12 August 2021</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="campaign-info-list">Address</div>
+                                                            <div class="campaign-related-list">Street 21, Clinton Building, Bass Square, London</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="assign-campaign-box">
+                                                <div class="assign-campaign-click-box">...</div>
+                                                <div class="assign-compaign-dd">
+                                                    <ul class="assign-compaign-dd-list">
+                                                        <li>Actions</li>
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <div class="icon-box01"></div> Assign to..</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box02"></div> Edit Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box03"></div> Pause Campaign</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="icon-box04"></div> Delete</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="campaign-status-box campaign-marked">
+                                        <div class="campaign-analysis-btn complete-analysis-btn">
+                                            <figure><img src="assets/images/tick-circle-icon.svg" alt=""></figure>
+                                            <a href="#">ANALYSIS Completed</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade campaign-listing-content-tab" id="campaign-tab-content03" role="tabpanel" aria-labelledby="campaign-tab03">...</div>
+                    <div class="tab-pane fade campaign-listing-content-tab" id="campaign-tab-content04" role="tabpanel" aria-labelledby="campaign-tab04">...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Assign Campaign -->
+    <div class="modal fade assign-campaign-modal" id="AssignCampaign" tabindex="-1" aria-labelledby="AssignCampaignLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="AssignCampaignLabel">Assign Campaign</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="assign-campaign-content">
+                        <span>Client X</span> 1133 Monastery Dr, Oakville, ON L6M 2A2, Canada
+                    </div>
+                    <div class="campaign-field-wrapper mb-25">
+                        <label for="campaign" class="campiagn-title">Assign to Employee</label>
+                        <div class="dd-select-field-outer">
+                            <select name="location" class="dd-select-field">
+                                <option value="">Employee Name or #</option>
+                                <option value="">Option 01</option>
+                                <option value="">Option 02</option>
+                                <option value="">Option 03</option>
+                              </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn create-campaign-btn">Cancel</button>
+                    <button type="button" class="btn btn-primary">Assign</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".assign-compaign-btn").click(function() {
+                $(".assign-compaign-dd").toggleClass('show');
+            });
+        });
+        document.getElementById('select-all').onclick = function() {
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            for (var checkbox of checkboxes) {
+                checkbox.checked = this.checked;
+            }
+        }
+        document.getElementById('all-select').onclick = function() {
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            for (var checkbox of checkboxes) {
+                checkbox.checked = this.checked;
+            }
+        }
+        $(".hamburger-icon").click(function(e) {
+            e.preventDefault();
+            $(".mobile-side-bar").addClass("active");
+        });
+        $(".close-cross-btn").click(function(e) {
+            e.preventDefault();
+            $(".mobile-side-bar").removeClass("active");
+        });
+        $(document).ready(function() {
+            $("#mobile-campagin-action").click(function() {
+                $(".mobile-campagin-action-dd").toggleClass('show');
+            });
+        });
+    </script>
+</body>
+
+</html>

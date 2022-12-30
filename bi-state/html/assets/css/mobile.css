@@ -1,0 +1,1186 @@
+    @media only screen and (max-width: 1399px) {
+        .map-box:before {
+            width: 360px;
+            height: 370px;
+            background-size: 100%;
+        }
+        .campaign-listing-inner {
+            padding: 0;
+        }
+        .assign-compaign-dd {
+            left: auto;
+            right: 0;
+        }
+        .signin-wrapper-box {
+            padding-top: 100px;
+        }
+        .query-searched tbody td {
+            padding: 20px 10px;
+        }
+        .query-searched tbody td:nth-child(3) {
+            font-size: 26px;
+            line-height: 36px;
+        }
+    }
+    
+    @media only screen and (max-width: 1199px) {
+        .default-navigation {
+            padding-top: 70px;
+        }
+        .searches-count {
+            font-size: 54px;
+            line-height: 64px;
+        }
+        .gmb-search-list li .gmb-search-box {
+            padding: 20px 10px;
+        }
+        .map-box:before {
+            width: 280px;
+            height: 290px;
+        }
+        .add-compaign-wrapper {
+            padding: 50px 0;
+        }
+        .compaign-holder {
+            margin-right: 155px;
+        }
+        .left-arrow h2:before {
+            left: -30px;
+        }
+        .add-compaign-inner,
+        .keyword-analysis-wrapper {
+            padding: 0 30px;
+        }
+        .client-table tbody td {
+            padding: 25px 10px;
+        }
+        .client-table tbody td {
+            font-size: 14px;
+            line-height: 16px;
+        }
+        .assign-compaign-dd {
+            left: auto;
+            right: 0;
+        }
+        .campaign-detail-box {
+            left: auto;
+            right: 0;
+        }
+    }
+    
+    @media only screen and (max-width: 991px) {
+        .mobile-toggle-btn .navbar-toggler-icon {
+            background-image: url('../images/toggle-mobile-icon.svg');
+        }
+        .hamburger-icon-box .hamburger-icon {
+            background-image: url('../images/left-toggle-btn.svg');
+        }
+        .mobile-toggle-btn:focus {
+            box-shadow: none;
+        }
+        .default-navigation-wrapper {
+            width: 86%;
+        }
+        .admin-navigation-inner {
+            position: absolute;
+            width: 30%;
+            right: 0;
+            top: 100%;
+            background-color: #fafbff;
+            box-shadow: 0px 4px 8px rgba(16, 24, 64, 0.16);
+            z-index: 1;
+        }
+        .admin-navigation-list {
+            margin-left: 0;
+        }
+        .admin-navigation .admin-navigation-inner .admin-navigation-list li a {
+            padding: 10px 15px;
+        }
+        .mobile-toggle-btn {
+            position: absolute;
+            left: 30px;
+            padding: 0;
+        }
+        .default-navigation-inner-box {
+            position: absolute;
+            top: 90%;
+            right: 0;
+            background-color: #1b1f3f;
+            width: 40%;
+            z-index: 1;
+        }
+        .default-navigation-list {
+            padding: 20px 0;
+        }
+        .monthly-performence-box {
+            padding: 15px;
+        }
+        .month-list li a {
+            padding: 5px 10px;
+        }
+        .navigation-outer-box .default-navigation .default-navigation-list li a {
+            color: #fff;
+        }
+        .navigation-outer-box .default-navigation .default-navigation-list li a {
+            padding: 10px 20px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .navigation-outer-box .default-navigation .default-navigation-list li a img {
+            filter: brightness(3);
+        }
+        .default-navigation .default-navigation-list li:first-child a {
+            padding-left: 20px;
+        }
+        .search-heading {
+            font-size: 20px;
+            line-height: 26px;
+        }
+        .searches-count {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        .compaire-box span.previous-month {
+            margin-top: 0;
+        }
+        .keyword-performence-list li {
+            display: inline;
+        }
+        .keyword-performence-list {
+            margin-bottom: 20px;
+        }
+        .rank-box {
+            margin-bottom: 30px;
+        }
+        .key-performence-sec {
+            padding-bottom: 70px;
+            margin-bottom: 70px;
+        }
+        .gmb-insight-sec {
+            padding-bottom: 70px;
+        }
+        .gmb-search-list li {
+            flex: none;
+            display: inline-block;
+        }
+        .gmb-search-list {
+            display: block;
+            margin-bottom: 35px;
+            overflow-x: scroll;
+            width: 100%;
+            max-width: 100%;
+            white-space: nowrap;
+            overflow-y: hidden;
+        }
+        .keyword-wrapper {
+            display: block;
+        }
+        .potential-keywords {
+            margin-top: 30px;
+        }
+        .compaign-name {
+            margin-right: 20px;
+        }
+        .compaign-holder {
+            margin-right: 50px;
+        }
+        .campaign-detail-box {
+            left: auto;
+            right: 0;
+            bottom: 0;
+        }
+        .query-searched tbody td:nth-child(3) {
+            font-size: 24px;
+            line-height: 30px;
+        }
+        .query-searched tbody td {
+            padding: 15px 15px;
+            font-size: 16px;
+            line-height: 18px;
+        }
+        .page-heading h2 {
+            margin-bottom: 20px;
+        }
+        .left-arrow h2:before {
+            display: none;
+        }
+        .query-searched-wrapper .search-or-sort-box {
+            position: relative;
+            right: 0;
+        }
+        .keyword-analysis-sec {
+            padding-top: 50px;
+            padding-bottom: 100px;
+        }
+        .client-table tbody td {
+            padding: 15px 10px;
+        }
+        .client-table tbody td {
+            padding: 10px 4px;
+        }
+        .client-table thead th {
+            padding: 10px 5px;
+        }
+        .client-table tbody td {
+            font-size: 12px;
+            line-height: 14px;
+        }
+        .assign-compaign-dd {
+            left: auto;
+            right: 0;
+        }
+        .admin-navigation {
+            padding: 10px 20px;
+        }
+        .pending-campaigns-table tbody td,
+        .pending-start-campaigns-table tbody td {
+            padding: 15px;
+        }
+        .admin-navigation-list,
+        .admin-logo {
+            display: none;
+        }
+        .admin-navigation .align_right {
+            justify-content: flex-end;
+        }
+        .close-cross-btn {
+            padding: 12px 19px;
+            display: inline-block;
+        }
+        .side-bar-logo-box {
+            padding: 9px 20px 45px;
+        }
+        .side-bar-logo-box a {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 600;
+            color: #474d66;
+            text-transform: uppercase;
+        }
+        .side-bar-logo-box a span {
+            position: relative;
+            top: -2px;
+            margin-right: 10px;
+        }
+        .mobile-side-bar .mobile-side-nav li a {
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 400;
+            color: #474d66;
+            border-left: 4px solid transparent;
+            padding: 12px 28px;
+            display: block;
+        }
+        .mobile-side-bar .mobile-side-nav li.active a,
+        .mobile-side-bar .mobile-side-nav li:hover a {
+            background-color: #F3F6FF;
+            color: #3366FF;
+            border-left: 4px solid #3366FF;
+        }
+        .mobile-side-bar .mobile-side-nav {
+            height: 100%;
+        }
+        .mobile-side-bar .mobile-side-nav li:last-child a {
+            color: #A73636;
+        }
+        .mobile-side-bar .mobile-side-nav li:last-child {
+            position: absolute;
+            bottom: 30px;
+        }
+        .heading-arrow span.previous-screen-btn {
+            position: relative;
+            left: 0;
+            top: -10px;
+            display: block;
+        }
+        .edit-compaign-listing-wrapper {
+            padding-top: 30px;
+        }
+        .heading-right-box {
+            display: block;
+        }
+        .mobile-campagin-action-btn-box {
+            display: block;
+            text-align: right;
+            width: 32px;
+            margin-left: auto;
+        }
+        .mobile-campagin-action-dd {
+            display: none;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 8px rgb(16 24 64 / 16%);
+            border-radius: 4px;
+            width: 210px;
+            padding: 8px 0;
+            position: absolute;
+            right: 35px;
+            z-index: 1;
+        }
+        .hide-on-tablet {
+            display: none;
+        }
+        .switch-box {
+            margin-right: 0;
+            position: relative;
+            margin-bottom: 15px;
+        }
+        .page-heading {
+            align-items: flex-start;
+        }
+        .mobile-campagin-action-btn-box .mobile-campagin-action-list li a {
+            display: block;
+            text-align: left;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 500;
+            color: #696f8c;
+            padding: 8px 15px;
+            text-transform: uppercase;
+            border-left: 2px solid transparent;
+        }
+        .mobile-campagin-action-btn-box .mobile-campagin-action-list li a:hover {
+            background-color: #EBF0FF;
+            border-left: 2px solid #3366FF;
+        }
+        .mobile-campagin-action-btn-box .mobile-campagin-action-list li:first-child a {
+            font-size: 10px;
+            line-height: 16px;
+        }
+        .mobile-campagin-action-btn-box .mobile-campagin-action-list li a .compaign-info-box {
+            display: block;
+            width: 100%;
+            height: auto;
+            border: none;
+        }
+        .mobile-campagin-action-btn-box .mobile-campagin-action-list li a .edit-campaign-box {
+            margin-left: 0;
+        }
+        .mobile-campagin-action-dd.show {
+            display: block;
+        }
+        .mobile-campagin-action-btn-box .mobile-campagin-action-list li a span.edit-campaign-inner {
+            margin-right: 15px;
+        }
+        .campaign-edit-listing-map {
+            margin: 30px auto 0;
+        }
+        .mobile-campagin-action-btn-box .mobile-campagin-action-list li a:hover {
+            background-color: #EBF0FF;
+        }
+        .mobile-campagin-action-btn-box .mobile-campagin-action-list li a:hover .compaign-info-box:hover {
+            background-color: #EBF0FF;
+            border: none;
+        }
+        .campaign-detail-popup {
+            background: rgba(71, 77, 102, 0.64);
+        }
+        .campaign-detail-popup .modal-header,
+        .campaign-detail-popup .modal-body,
+        .campaign-detail-popup .modal-footer {
+            padding: 0;
+        }
+        .campaign-detail-popup .modal-content {
+            padding: 16px;
+        }
+        .campaign-detail-popup .modal-header {
+            font-size: 18px;
+            line-height: 24px;
+            color: #101840;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        .popup-agent-details {
+            display: flex;
+            justify-content: flex-start;
+        }
+        .campaign-detail-popup .compaign-detail-inner h6 {
+            margin-bottom: 0;
+        }
+        .campaign-detail-popup .compaign-detail-inner p {
+            font-size: 14px;
+            line-height: 22px;
+            font-weight: 500;
+        }
+        .campaign-detail-popup .compaign-detail-inner {
+            margin-bottom: 24px;
+        }
+        .campaign-detail-popup .compaign-center-box {
+            margin: 0 80px 0 0;
+        }
+        .campaign-detail-popup .compaign-detail-inner h6.agent-type {
+            margin-bottom: 10px;
+        }
+        .create-date-box .create-date-label,
+        .modify-date-box .modify-date-label {
+            font-size: 10px;
+            line-height: 16px;
+            font-weight: 500;
+            color: #696f8c;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        .create-date-time,
+        .modify-date-time {
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: 400;
+            color: #474d66;
+        }
+        .create-date-box {
+            margin-bottom: 24px;
+        }
+        .close-campaign-detail-btn {
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: 600;
+            color: #fff;
+            text-transform: uppercase;
+            padding: 8px 16px;
+            background: #3366FF;
+            border-radius: 4px;
+        }
+        .edit-listng-main-wrapper .month-box {
+            display: none;
+        }
+        .client-analysis-table tr td {
+            padding: 15px 0;
+        }
+        .client-analysis-table tbody td:first-child {
+            padding-left: 10px;
+        }
+        .client-analysis-table tbody td:last-child {
+            padding-right: 10px;
+        }
+        .select-all-box {
+            margin-left: 10px;
+        }
+        .campaign-inprogress .select-all-box {
+            margin-left: 10px;
+        }
+    }
+    
+    @media only screen and (max-width: 767px) {
+        .default-navigation-wrapper {
+            width: 60%;
+            margin-right: auto;
+        }
+        .hide-mobile {
+            display: none;
+        }
+        .map-box:before {
+            width: 210px;
+            height: 220px;
+        }
+        .rank-box:before {
+            width: 6px;
+        }
+        .hide-on-mobile,
+        .compaire-box span.previous-month {
+            display: none;
+        }
+        .show-on-mobile {
+            display: block;
+        }
+        .mb-75 {
+            margin-bottom: 50px;
+        }
+        .counter-compare-box {
+            display: block;
+        }
+        .searches-count {
+            font-size: 36px;
+            line-height: 42px;
+            margin-right: 0;
+            margin-bottom: 5px;
+        }
+        .search-heading {
+            margin-bottom: 10px;
+        }
+        .mobile-mragin {
+            margin-bottom: 50px;
+        }
+        .default-navigation-inner-box {
+            width: 70%;
+        }
+        .info-box .mobile-box {
+            display: block;
+            font-size: 14px;
+            line-height: 16px;
+            color: #727682;
+            margin-top: 10px;
+            font-weight: 400;
+        }
+        .select-clint-box {
+            display: block;
+        }
+        .compaign-list-box {
+            display: block;
+        }
+        .check-box-container {
+            top: 0;
+            margin-right: 0;
+        }
+        .compaign-inner-list-box {
+            justify-content: space-between;
+        }
+        .compaign-name,
+        .compaign-holder {
+            margin-right: 0;
+        }
+        .mobile-margin {
+            margin-bottom: 15px;
+        }
+        .campaign-listing-wrapper {
+            padding: 50px 0;
+        }
+        .create-new-campaign-btn a {
+            top: 0;
+            position: relative;
+        }
+        .edit-campaign-heading-box {
+            display: block;
+            position: relative;
+        }
+        .add-compaign-inner h2,
+        .edit-campaign-btn-box {
+            margin-bottom: 20px;
+        }
+        .select-clint-box .add-client-btn {
+            padding-left: 0;
+            padding-top: 20px;
+        }
+        .client-table {
+            width: 600px;
+        }
+        .client-table .info-sign-box,
+        .client-table .campaign-call-box,
+        .campaign-call-box .client-table {
+            margin-right: 0;
+        }
+        .compaign-holder-img {
+            width: 24px;
+            height: 24px;
+            font-size: 8px;
+            line-height: 10px;
+        }
+        .campaign-call-count {
+            font-size: 8px;
+            line-height: 12px;
+        }
+        .select-all-box {
+            margin-left: 0;
+        }
+        .campaign-listing-container {
+            display: block;
+        }
+        .campaign-listing-tab li .nav-link {
+            font-size: 10px;
+            line-height: 12px;
+            margin: 0 5px;
+        }
+        .compaign-name {
+            margin: 10px 0;
+        }
+        .compaign-holder {
+            margin: 10px 0;
+        }
+        .campaign-listing-tab {
+            display: block;
+            text-align: center;
+        }
+        .campaign-analysis-btn {
+            margin-bottom: 10px;
+        }
+        .campaign-listing-tab li {
+            display: inline-block;
+        }
+        .campaign-inprogress .select-all-box {
+            margin-left: 0;
+            margin-bottom: 15px;
+        }
+        .table_responsive {
+            overflow-x: auto;
+            padding-bottom: 70px;
+        }
+        .campaign-detail-box {
+            bottom: -70px;
+            z-index: 1;
+        }
+        .admin-navigation-inner {
+            width: 50%;
+        }
+        .notification-dd {
+            width: 375px;
+            right: -75px;
+        }
+        .page-heading h2 {
+            font-size: 28px;
+            line-height: 34px;
+        }
+        .edit-listng-main-wrapper .monthly-box .monthly-heading {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .edit-listng-main-wrapper .search-heading {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        .edit-listng-main-wrapper .searches-count {
+            font-size: 30px;
+            line-height: 36px;
+        }
+        .edit-listng-main-wrapper .mb-75 {
+            margin-bottom: 30px;
+        }
+        .searches-sec {
+            padding-bottom: 50px;
+        }
+        .edit-listng-main-wrapper .sec-heading h2 {
+            font-size: 20px;
+            line-height: 26px;
+        }
+        .edit-listng-main-wrapper .monthly-filter-dd {
+            font-size: 12px;
+            height: 32px;
+            padding: 8px 35px 8px 10px;
+        }
+        .signin-wrapper-box {
+            padding-top: 100px;
+        }
+        .signin-heading h2.heading-arrow:before {
+            display: none;
+        }
+        .search-or-sort-box {
+            position: relative;
+        }
+        .pending-campaigns-wrapper,
+        .pending-start-campaigns-wrapper {
+            padding-top: 0;
+        }
+        .pending-campaign .select-all-box {
+            margin-left: 0;
+        }
+        .campaign-action-box {
+            display: block;
+        }
+        .campaign-action-btn-list-inner {
+            margin-bottom: 13px;
+        }
+        .client-analysis-table tr td {
+            padding: 15px;
+        }
+        .client-analysis-table,
+        .pending-campaigns-table,
+        .pending-start-campaigns-table,
+        .agent-table {
+            width: 670px;
+        }
+        .agent-table th:first-child {
+            padding-left: 5px;
+        }
+        .hide-on-mobile {
+            display: none;
+        }
+        .mobile-title {
+            display: block;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 600;
+            color: #101840;
+            position: absolute;
+            top: 15px;
+            left: 75px;
+        }
+        .hamburger-icon-box .hamburger-icon {
+            width: 16px;
+        }
+        .add-compaign-wrapper {
+            padding: 30px 0 35px;
+        }
+        .heading-arrow span.previous-screen-btn {
+            position: relative;
+            left: 0px;
+            top: -10px;
+            display: block;
+        }
+        .add-compaign-inner h2 {
+            font-size: 28px;
+            line-height: 32px;
+            color: #101840;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+        .add-compaign-inner,
+        .keyword-analysis-wrapper {
+            padding: 0;
+        }
+        .add-client-btn {
+            display: none;
+        }
+        .compaign-detail-box {
+            display: none;
+        }
+        .query-searched-wrapper {
+            display: none;
+        }
+        .keyword-performence-list {
+            overflow-x: scroll;
+            width: 100%;
+            max-width: 100%;
+            white-space: nowrap;
+            overflow-y: hidden;
+        }
+        .map-outer-wrapper,
+        .mobile-hide-box {
+            display: none;
+        }
+        .mobile-show-map,
+        .mobile-show-box {
+            display: block;
+        }
+        .mobil-half-box {
+            width: 45%;
+            max-width: 100%;
+            float: left;
+            border-right: 1px solid #E6E8F0;
+            border-top: 0;
+            padding-top: 0;
+        }
+        .mobil-second-half-box {
+            width: 55%;
+            max-width: 100%;
+            float: left;
+            border-top: 0;
+            padding-left: 40px;
+            padding-top: 0;
+        }
+        .relevence-inner-box .search-volum-heading {
+            font-size: 14px;
+            line-height: 16px;
+        }
+        .relevence-inner-box .search-volum-count {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 600;
+        }
+        .category-box .rank-status.error-box,
+        .rank-status {
+            left: 75px;
+            right: auto;
+        }
+        .mobile-query-searched {
+            display: block;
+        }
+        .mobile-query-searched-list li {
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+            margin-bottom: 28px;
+        }
+        .mobile-query-searched-list li .mobile-query-count {
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+            color: #696f8c;
+            margin-right: 24px;
+        }
+        .mobile-query-searched-list li .mobile-query-seaerch {
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #696f8c;
+            max-width: 158px;
+        }
+        .mobile-query-ratio {
+            margin-left: auto;
+            text-align: right;
+        }
+        .mobile-query-ratio .query-search-count {
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #696f8c;
+        }
+        .mobile-query-ratio .query-search-percentage {
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 500;
+            color: #429777;
+        }
+        .mobile-query-ratio .query-search-percentage span img {
+            width: 18px;
+        }
+        .query-search-sec {
+            padding-bottom: 55px;
+        }
+        .campaign-ready-box {
+            display: none;
+        }
+        .edit-campaign-btn-box {
+            position: absolute;
+            right: 20px;
+            top: 0;
+            margin-bottom: 0;
+        }
+        .submit-changes-btn span,
+        .cancel-btn {
+            display: none;
+        }
+        .edit-campaign-btn-box .mobile-campagin-action-btn-box {
+            display: block;
+        }
+        .edit-campaign-btn-box .mobile-campagin-action-btn-box .mobile-campagin-action-dd {
+            right: 85px;
+        }
+        .order01 {
+            order: 1;
+        }
+        .order02 {
+            order: 2;
+        }
+        .rank-status.success-box.ranking-with-tag {
+            left: auto;
+            right: 0;
+        }
+        .cta-box {
+            display: block;
+        }
+        .cta-box .keyword-selected-btn {
+            margin-bottom: 15px;
+        }
+        .client-analysis-table-wrapper {
+            display: none;
+        }
+        .mobile-show {
+            display: block;
+        }
+        .mobile-hide,
+        .search-field-outer {
+            display: none;
+        }
+        .mobile-box {
+            position: absolute;
+            justify-content: flex-end;
+            right: 0;
+            top: -10px;
+            align-items: flex-start !important;
+        }
+        .mobile-box .create-new-campaign-btn a {
+            position: relative;
+            top: 0;
+        }
+        .mobile-sec {
+            display: block;
+            padding-top: 10px;
+        }
+        .first-box {
+            display: flex;
+        }
+        .campaign-type-box {
+            display: flex;
+            align-items: flex-start;
+        }
+        .campaing-info-box {
+            display: flex;
+            margin-left: auto;
+        }
+        .campaign-status-box {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+        }
+        .compaign-name {
+            margin: 0 10px;
+        }
+        .mobile-sec-listing>li {
+            padding: 20px 0;
+            border-top: 1px solid #E6E8F0;
+        }
+        .campaign-marked {
+            justify-content: flex-start;
+        }
+        .campaign-marked .campaign-analysis-btn {
+            margin-left: 20px;
+        }
+        .campaign-action-btn-list-inner {
+            display: none;
+        }
+        .agent-name-container {
+            margin-left: 15px;
+        }
+        .dd-select-field-outer {
+            width: 130px;
+        }
+        .campaign-status-btn {
+            text-align: right;
+        }
+        .agent-box {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .agent-info {
+            margin-left: 15px;
+            font-size: 20px;
+            line-height: 26px;
+            font-weight: 600;
+            color: #000;
+        }
+        .agent-info small {
+            display: block;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+        }
+        .index-rank-btn {
+            left: auto;
+            right: 0;
+        }
+    }
+    
+    @media only screen and (max-width: 574px) {
+        .monthly-box .monthly-heading {
+            font-size: 20px;
+            line-height: 26px;
+        }
+        .month-box {
+            margin-right: 18px;
+        }
+        .month-box .left-arrow {
+            padding-right: 10px;
+        }
+        .month-box .right-arrow {
+            padding-left: 10px;
+        }
+        .search-heading {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .search-inner-box {
+            padding-left: 20px;
+        }
+        .map-box:before {
+            width: 160px;
+            height: 170px;
+        }
+        .default-navigation .info-box {
+            font-size: 20px;
+            line-height: 26px;
+        }
+        .info-box .mobile-box {
+            font-size: 13px;
+        }
+        .potential-keyword-list {
+            width: 100%;
+        }
+        .admin-navigation {
+            padding: 10px 12px;
+        }
+        .mobile-toggle-btn {
+            left: 20px;
+        }
+        .campaign-field-wrapper .campiagn-input-field {
+            max-width: 100%;
+        }
+        .dd-select-field-outer {
+            width: 100%;
+        }
+        .selected-box {
+            padding-right: 0;
+        }
+        .bootstrap-tagsinput {
+            width: 100%;
+        }
+        .mobile-campagin-action-dd {
+            right: 12px;
+        }
+        .cta-box .keyword-selected-btn {
+            margin-bottom: 15px;
+        }
+        .analysis-card {
+            border: none;
+            border-bottom: 1px solid #edeff5;
+        }
+        .analysis-card {
+            padding: 12px 15px 70px;
+            margin-bottom: 60px;
+        }
+        .cta-box {
+            border: none;
+        }
+        .keyword-analysis-sec {
+            padding-bottom: 50px;
+        }
+    }
+    
+    @media only screen and (max-width: 375px) {
+        .default-navigation .info-box {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        .default-navigation {
+            padding-top: 40px;
+        }
+        .monthly-box .monthly-heading {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .month-box {
+            font-size: 14px;
+            line-height: 18px;
+            margin-right: 0;
+            margin-left: 15px;
+        }
+        .month-box .left-arrow {
+            padding-right: 0;
+        }
+        .month-box .right-arrow {
+            padding-left: 0;
+        }
+        .month-list li a {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .search-inner-box {
+            padding-left: 0;
+        }
+        .keyword-performence-list li a {
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .map-box:before {
+            width: 120px;
+            height: 130px;
+        }
+        .key-performence-sec {
+            padding-bottom: 40px;
+            margin-bottom: 40px;
+        }
+        .monthly-filter-dd {
+            font-size: 14px;
+            padding: 8px 35px 10px 16px;
+            height: 40px;
+        }
+        .sec-heading h2 {
+            font-size: 20px;
+            line-height: 26px;
+        }
+        .info-box .mobile-box {
+            display: none;
+        }
+        .selected-keyword-filed,
+        .potential-keyword-list {
+            width: 100%;
+        }
+        .add-compaign-inner h2 {
+            font-size: 26px;
+            line-height: 36px;
+        }
+        .compaign-list-box {
+            padding: 15px 10px;
+        }
+        .campaign-call-count {
+            margin: 0;
+        }
+        .campaign-call-box,
+        .info-sign-box {
+            margin-right: 0;
+        }
+        .search-field-outer {
+            width: 50%;
+        }
+        .search-field {
+            width: 100%;
+        }
+        .campaign-listing-tab li .nav-link {
+            padding: 5px 10px;
+        }
+        .campaign-listing-tab {
+            margin-bottom: 60px;
+        }
+        .sec-heading h2 {
+            font-size: 15px;
+            line-height: 22px;
+        }
+        .query-searched tbody td {
+            padding: 10px 10px;
+            font-size: 12px;
+            line-height: 14px;
+        }
+        .add-compaign-inner,
+        .keyword-analysis-wrapper {
+            padding: 0 0;
+        }
+        .heading-arrow:before {
+            display: none;
+        }
+        .analysis-card {
+            padding: 12px 15px;
+        }
+        .compaign-holder-name {
+            font-size: 10px;
+            line-height: 14px;
+        }
+        .client-table .agent-dd-field,
+        .client-table .dd-select-field {
+            width: 85px;
+        }
+        .admin-panel-list li:first-child:hover>a {
+            padding: 4px 10px 6px;
+        }
+        .notification-dd {
+            width: 300px;
+            right: -105px;
+        }
+        .admin-panel-list li .notification-dd-list li a {
+            font-size: 10px;
+            line-height: 14px;
+            padding: 10px 15px;
+        }
+        .admin-panel-list li:first-child>a {
+            padding: 4px 10px 6px;
+        }
+        .signin-heading h2 {
+            font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 30px;
+        }
+        .mobile-title {
+            left: 65px;
+        }
+        .notification-dd {
+            width: 370px;
+            right: -70px;
+            border-radius: 0;
+        }
+        .mobile-query-searched-list li .mobile-query-seaerch {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        .query-search-sec {
+            padding-top: 50px;
+        }
+        .gmb-insight-sec {
+            padding-bottom: 50px;
+        }
+        .mobil-second-half-box {
+            padding-left: 10px;
+        }
+        .campaign-listing-tab {
+            text-align: center;
+            overflow-x: auto;
+            flex-wrap: nowrap;
+            white-space: nowrap;
+        }
+        .info-sign-box {
+            margin-right: 15px;
+        }
+    }
+    
+    @media only screen and (max-width: 374px) {
+        .notification-dd {
+            border-radius: 0;
+            width: 315px;
+            right: -70px;
+        }
+    }
